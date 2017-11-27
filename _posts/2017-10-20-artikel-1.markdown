@@ -22,7 +22,7 @@ Kemudian tentukan bagaimana halaman atau format url untuk setiap halaman
 
 maka tampilannya untuk page kedua
 
-    https://kurtakon.com/page2/
+    {{site.url}}/page2/
 <div class="callout callout-danger">
 <h4> Pagination hanya berjalan pada file html</h4>
 

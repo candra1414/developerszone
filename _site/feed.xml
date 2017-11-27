@@ -6,8 +6,8 @@
 </description>
     <link>https://developerszone.work/</link>
     <atom:link href="https://developerszone.work/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Nov 2017 11:06:40 +0700</pubDate>
-    <lastBuildDate>Mon, 27 Nov 2017 11:06:40 +0700</lastBuildDate>
+    <pubDate>Mon, 27 Nov 2017 11:37:16 +0700</pubDate>
+    <lastBuildDate>Mon, 27 Nov 2017 11:37:16 +0700</lastBuildDate>
     <generator>Jekyll v2.5.0</generator>
     
       <item>
@@ -40,7 +40,7 @@
     
       <item>
         <title>Bagaimana koneksi database Mysql pada Django ?</title>
-        <description>&lt;p&gt;Pada artikel sebelumnya membahas &lt;a href=&quot;https://kurtakon.com/linux/python/2017/11/23/artikel-3/&quot;&gt;Bagaimana cara install Django pada linux?&lt;/a&gt; untuk kali ini mengatur koneksi databasenya. Karena gak keren kalau gak ada input data donk. Nanti jadi website statik bukan dinamis. Yups untuk kali ini koneksi databasenya menggunakan yang bisa &lt;strong&gt;Mysql&lt;/strong&gt; ( ini biasa buat saya belum tentu anda ya hehehe).&lt;/p&gt;
+        <description>&lt;p&gt;Pada artikel sebelumnya membahas &lt;a href=&quot;https://developerszone.work/linux/python/2017/11/23/artikel-3/&quot;&gt;Bagaimana cara install Django pada linux?&lt;/a&gt; untuk kali ini mengatur koneksi databasenya. Karena gak keren kalau gak ada input data donk. Nanti jadi website statik bukan dinamis. Yups untuk kali ini koneksi databasenya menggunakan yang bisa &lt;strong&gt;Mysql&lt;/strong&gt; ( ini biasa buat saya belum tentu anda ya hehehe).&lt;/p&gt;
 
 &lt;p&gt;Cara koneksi databasenya :&lt;/p&gt;
 
@@ -192,7 +192,7 @@ Quit the server with CONTROL-C.
 
 &lt;p&gt;Hasilnya…&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-23nov2017-1.png&quot; alt=&quot;alt text&quot; title=&quot;hello word&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://developerszone.work/asset/img/img-23nov2017-1.png&quot; alt=&quot;alt text&quot; title=&quot;hello word&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 23 Nov 2017 15:06:58 +0700</pubDate>
@@ -341,7 +341,7 @@ Processing triggers for mime-support (3.54ubuntu1.1) ...
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-13nov2017-2.png&quot; alt=&quot;alt text&quot; title=&quot;view php5&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://developerszone.work/asset/img/img-13nov2017-2.png&quot; alt=&quot;alt text&quot; title=&quot;view php5&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Pada &lt;strong&gt;location&lt;/strong&gt; terdapat &lt;strong&gt;fastcgi_pass unix:&lt;/strong&gt;  yang mengacu pada versi &lt;em&gt;php&lt;/em&gt; yang berjalan. Terlihat &lt;strong&gt;/var/run/php5-fpm.sock&lt;/strong&gt; versi php5 yang saat ini berjalan. Untuk merubahnya, kita harus mencari versi pada folder &lt;strong&gt;/var/run/&lt;/strong&gt;   &lt;strong&gt;php7-fpm.sock&lt;/strong&gt; berada di folder mana pada di install (pada kasus saya file tersebut terdapat didalam folder php).&lt;/p&gt;
 
@@ -368,7 +368,7 @@ Processing triggers for mime-support (3.54ubuntu1.1) ...
 &lt;pre&gt;&lt;code&gt;    $ sudo service nginx restart
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-13nov2017-1.png&quot; alt=&quot;alt text&quot; title=&quot;view php7&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://developerszone.work/asset/img/img-13nov2017-1.png&quot; alt=&quot;alt text&quot; title=&quot;view php7&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 13 Nov 2017 15:06:58 +0700</pubDate>
@@ -447,21 +447,21 @@ Processing triggers for mime-support (3.54ubuntu1.1) ...
   &lt;li&gt;Tampilan awal&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-26okt2017-1.png&quot; alt=&quot;alt text&quot; title=&quot;view&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://developerszone.work/asset/img/img-26okt2017-1.png&quot; alt=&quot;alt text&quot; title=&quot;view&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Tampilan pada saat input nilai awal&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-26okt2017-2.png&quot; alt=&quot;alt text&quot; title=&quot;view&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://developerszone.work/asset/img/img-26okt2017-2.png&quot; alt=&quot;alt text&quot; title=&quot;view&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Tampilan pada saat input nilai pengurangan&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-26okt2017-3.png&quot; alt=&quot;alt text&quot; title=&quot;view&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://developerszone.work/asset/img/img-26okt2017-3.png&quot; alt=&quot;alt text&quot; title=&quot;view&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-26okt2017-4.png&quot; alt=&quot;alt text&quot; title=&quot;view&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://developerszone.work/asset/img/img-26okt2017-4.png&quot; alt=&quot;alt text&quot; title=&quot;view&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Penjelasan :&lt;/p&gt;
 
@@ -545,7 +545,7 @@ Processing triggers for mime-support (3.54ubuntu1.1) ...
 
 &lt;p&gt;maka tampilannya untuk page kedua&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;https://kurtakon.com/page2/
+&lt;pre&gt;&lt;code&gt;https://developerszone.work/page2/
 &lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&quot;callout callout-danger&quot;&gt;
 &lt;h4&gt; Pagination hanya berjalan pada file html&lt;/h4&gt;
@@ -602,15 +602,15 @@ Processing triggers for mime-support (3.54ubuntu1.1) ...
 
 &lt;p&gt;Kode untuk menampilkan daftar atau list artikel yang sudah di padding&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-20okt2017-1.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://developerszone.work/asset/img/img-20okt2017-1.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Kode untuk membuat button previous dan next page untuk halaman padding&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-20okt2017-2.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://developerszone.work/asset/img/img-20okt2017-2.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hasil tampilan :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-20okt2017-3.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://developerszone.work/asset/img/img-20okt2017-3.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 20 Oct 2017 10:06:58 +0700</pubDate>
@@ -665,7 +665,7 @@ Processing triggers for mime-support (3.54ubuntu1.1) ...
 
 &lt;p&gt;Bagaimana Menjalankan PHP ?&lt;/p&gt;
 
-&lt;p&gt;Untuk menjalankan PHP kita memerlukan &lt;a href=&quot;https://kurtakon.com/php/server/2017/10/19/artikel-3/&quot;&gt;&lt;em&gt;Web Server&lt;/em&gt;&lt;/a&gt;. Ada bermacam macam web server seperti &lt;em&gt;Apache&lt;/em&gt; atau bisa juga &lt;em&gt;Nginx&lt;/em&gt; yang bisa kita gunakan. Pada saat ini penulis menggunakan &lt;em&gt;Nginx&lt;/em&gt;  yang dijalankan pada &lt;em&gt;localhost&lt;/em&gt; atau IP &lt;em&gt;127.0.0.1&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Untuk menjalankan PHP kita memerlukan &lt;a href=&quot;https://developerszone.work/php/server/2017/10/19/artikel-3/&quot;&gt;&lt;em&gt;Web Server&lt;/em&gt;&lt;/a&gt;. Ada bermacam macam web server seperti &lt;em&gt;Apache&lt;/em&gt; atau bisa juga &lt;em&gt;Nginx&lt;/em&gt; yang bisa kita gunakan. Pada saat ini penulis menggunakan &lt;em&gt;Nginx&lt;/em&gt;  yang dijalankan pada &lt;em&gt;localhost&lt;/em&gt; atau IP &lt;em&gt;127.0.0.1&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Contoh script :&lt;/p&gt;
 
@@ -675,7 +675,7 @@ Processing triggers for mime-support (3.54ubuntu1.1) ...
 
 &lt;p&gt;Hasilnya :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-19okt2017-4.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://developerszone.work/asset/img/img-19okt2017-4.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Contoh Membuat penjumlahan dengan PHP&lt;/p&gt;
 
@@ -691,7 +691,7 @@ Processing triggers for mime-support (3.54ubuntu1.1) ...
 &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Hasilnya :
-&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-19okt2017-5.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://developerszone.work/asset/img/img-19okt2017-5.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Membuat perulangan dengan &lt;strong&gt;for&lt;/strong&gt; untuk menghasilkan table :&lt;/p&gt;
 
@@ -722,7 +722,7 @@ Processing triggers for mime-support (3.54ubuntu1.1) ...
 
 &lt;p&gt;Hasilnya :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-19okt2017-6.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://developerszone.work/asset/img/img-19okt2017-6.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 19 Oct 2017 16:06:58 +0700</pubDate>
