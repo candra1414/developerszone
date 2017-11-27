@@ -15,7 +15,7 @@ markdown: kramdown
 
 include: ['.htaccess']
 # Google services
-google_analytics: UA-104179765-1
+google_analytics: UA-110154274-1
 
 permalink: pretty
 
