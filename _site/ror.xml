@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://developerszone.work/</title>
+  <link>http://developerszone.work/</link>
+
+<item>
+     <link>http://developerszone.work/</link>
+     <title>Developers Zone Work</title>
+     <description>Quote : <br</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/about/</link>
+     <title>Apa?</title>
+     <description>Quote : <br</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/categori/</link>
+     <title>Kategori</title>
+     <description>Quote : <br</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/jekyll/update/2017/11/27/welcome-to-jekyll/</link>
+     <title>Welcome to Jekyll!</title>
+     <description>You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/linux/python/django/mysql/2017/11/23/artikel-4/</link>
+     <title>Bagaimana koneksi database Mysql pada Django ?</title>
+     <description>Pada artikel sebelumnya membahas Bagaimana cara install Django pada linux? untuk kali ini mengatur koneksi databasenya. Karena gak keren kalau gak ada input ...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/linux/python/2017/11/23/artikel-3/</link>
+     <title>Bagaimana cata install Django pada Linux ?</title>
+     <description>Selamat malam dan dimana mata butuh kopi. Apa yang pertama kali anda pikirkan ketika dengar kata Python? Pasti orang awan akan bilang ular Python .Akan tetap...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/page2/</link>
+     <title>Developers Zone Work</title>
+     <description>Quote : <br</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/page3/</link>
+     <title>Developers Zone Work</title>
+     <description>Quote : <br</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/page4/</link>
+     <title>Developers Zone Work</title>
+     <description>Quote : <br</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/page5/</link>
+     <title>Developers Zone Work</title>
+     <description>Quote : <br</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/page6/</link>
+     <title>Developers Zone Work</title>
+     <description>Quote : <br</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/page7/</link>
+     <title>Developers Zone Work</title>
+     <description>Quote : <br</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/page8/</link>
+     <title>Developers Zone Work</title>
+     <description>Quote : <br</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/page9/</link>
+     <title>Developers Zone Work</title>
+     <description>Quote : <br</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/page10/</link>
+     <title>Developers Zone Work</title>
+     <description>Quote : <br</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/linux/2017/11/23/artikel-2/</link>
+     <title>Bagaimana uninstall aplikasi pada linux dengan terminal ?</title>
+     <description>Sering kita main install aplikasi laptop kita. Padahal tidak penting sama sekali di sentuh juga tidak. Aplikasi tersebut tanpa sadari mengurangi kapasitas ha...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/linux/2017/11/23/artikel-1/</link>
+     <title>Bagaimana install file deb pada linux ?</title>
+     <description>Ketika kita membutukahan aplikasi baru pada linux, kita terkadang mencari pada internet panggil saja mbah google. Aplikasi yang kita dapat berformat deb. dan...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/linux/nginx/php/2017/11/13/artikel-1/</link>
+     <title>Bagaimana merubah versi php pada nginx linux FastCGI?</title>
+     <description>Pada artikel sebelumnnya saya membahas Bagaimana melakukan switch multipel versi aplikasi php5 ke php7 pada apache linux?? Untuk kali ini saya akan membahas ...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/javascript/html/php/2017/10/26/artikel-1/</link>
+     <title>Bagaimana Contoh Menggunakan Onkeyup dan Onkeypress pada Javascript ?</title>
+     <description>Pada Kali ini saya ingin memberikan contoh sederhana menggunakan Javascript . Untuk kali ini saya akan menggukan Onkeyup dan Onkeypress . Pada contoh penggun...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/jekyll/2017/10/20/artikel-1/</link>
+     <title>Bagaimana membuat pagination pada Jekyll ?</title>
+     <description>Pagination sering kita jumpai pada web-web terutama pada blog agar tampilan list pada beranda tidak terlalu banyak kebawah. Pada kali ini saya akan mendemoka...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/php/server/2017/10/19/artikel-3/</link>
+     <title>Apa itu Web Server?</title>
+     <description>Web Server adalah perangkat lunak ataupun perangkat keras yang menyediakan layanan akses kepada pengguna melalui protokol komunikasi HTTP atau HTTPS atas ber...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/html/php/2017/10/19/artikel-2/</link>
+     <title>Apa itu PHP?</title>
+     <description>Sering kita mendegar dengan kata PHP , perlu diingat PHP di sini bukan Pemberi harapan palsu namun PHP (Hypertext Preprocessor) yaitu bahasa pemerograman yan...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/html/css/2017/10/19/artikel-1/</link>
+     <title>Bagaimana contoh sederhana HTML ? [Bagian 3]</title>
+     <description>Pada artikel sebelumnya tentang ‘Bagaimana contoh sederhana HTML ? [Bagian 1]’  dan ‘Bagaimana contoh sederhana HTML ? [Bagian 2]’   masih html biasa serta t...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/html/2017/10/10/artikel-2/</link>
+     <title>Bagaimana contoh sederhana HTML ? [Bagian 2]</title>
+     <description>Setelah menulis ‘Bagaimana contoh sederhana HTML ? [Bagian 1]’  . Mari kita lanjukan bagian selanjutnya. Pada artikel sebelumnya membahas sedikit tentang htm...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/html/2017/10/10/artikel-1/</link>
+     <title>Bagaimana contoh sederhana HTML ? [Bagian 1]</title>
+     <description>Html kepanjangan dari HyperText Markup Language  merupakan bahasa inti dari semua konten dalam  Web. Sebagian besar dari web pada browser menggukan HTML seba...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/ruby/rails/2017/09/05/artikel-2/</link>
+     <title>Bagaimana mengatasi install ruby on rails error karena versi ruby pada linux?</title>
+     <description>Syarat untuk meinstall rails versi saat ini (5.1.3) diharuskan memiliki ruby versi 2.2.2 atau lebih baru dari versi tersebut.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/ruby/rails/2017/09/05/artikel-1/</link>
+     <title>Bagaimana menginstall ruby on rails pada linux?</title>
+     <description>Sebelum instal rails,saya ingin menjelaskan</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/linux/2017/09/04/artikel-1/</link>
+     <title>Bagaimana melakukan switch multipel versi aplikasi pada linux?</title>
+     <description>Pada penggunakan linux sering menemukan banyak versi untuk aplikasi di install biasa lebih tinggi atau lebih lama.Penggunaan versi yang berbeda-beda tergantu...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/linux/apache/php/2017/09/04/artikel-2/</link>
+     <title>Bagaimana melakukan switch multipel versi aplikasi php5 ke php7 pada apache linux?</title>
+     <description>Seperti pada artikel sebelumnnya saya membahas Bagaimana melakukan switch multipel versi aplikasi pada linux?Untuk kali ini saya akan membahas Bagaimana mela...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/jekyll/disqus/2017/08/30/artikel-1/</link>
+     <title>Bagaimana Memasang Disqus Pada Jekyll?</title>
+     <description>Bagi pengguna website static yang tidak memiliki database akan kesulitan membuat komentar. Seperti memasang komentar pada web yang dibuat dengan Jekyll . Sal...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/yii/2017/08/28/artikel-1/</link>
+     <title>Bagaimana Membuat Migrasi Tabel Database Pada Yii2?</title>
+     <description>Pada yii terdapat fasilitas migrate database dari file php ke database mysql.Letaknya biasa pada consol/migrations/.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/composer/yii/2017/08/24/artikel-2/</link>
+     <title>Bagaimana cara Install Yii2 pada Linux dengan Composer?</title>
+     <description>Yii merupakan akromin dari Yes It is. Yii merupakan Framework php dengan konsep MVC.Sebelum Yii2 terlahir dulu terkenal adanya Yii 1.1 . Berdasarkan pengalam...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/composer/2017/08/24/artikel-1/</link>
+     <title>Bagaimana cara Install Composer pada Linux?</title>
+     <description>Composer adalah tools untuk manajemen projek anda berbasis PHP.Anda dapat membuat library dan mengelola projek anda seperti intall, update paket yang ada. Ja...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/git/sublime-text/2017/08/22/artikel-1/</link>
+     <title>Bagaimana menginstal paket Git dengan Sublime Text ?</title>
+     <description>Bagi penggunakan text editor Sublime Text dan penggunakan Git pasti bertanya Apakah ada paket untuk git pada Sublime Text? Jawabannya Ada.Yee.. senang bukan ...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/jekyll/2017/08/08/artikel-2/</link>
+     <title>Bagaimana cara menginstall Jekyll?</title>
+     <description>Seperti pada artikel sebelumnya membahas ‘Apa itu Jekyll?’  . Kali ini akan membahas Bagaimana cara menginstall Jekyll?. Sebelum melakukan install ada bebera...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/jekyll/2017/08/08/artikel-1/</link>
+     <title>Apa itu Jekyll?</title>
+     <description>Jekyll  is a simple, blog-aware, static site generator for personal, project, or organization sites.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/jekyll/2017/08/07/artikel-1/</link>
+     <title>Bagaimana Menggunakan Google Analytic pada Jekyll?</title>
+     <description>Pada awalnya saya bertanya Bagaimana mengetahui jumlah pengujung pada Website? .Disini saya memcoba fasilitas Google yaitu  Google Analytic. Pada percobaan k...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/jekyll/2017/08/03/artikel-1/</link>
+     <title>Bagaimana mengatasi  Error:  Address already in use - bind(2) pada Jekyll ?</title>
+     <description>Sebagai pemula menggunakan menggunakan Jekyll sering penulis menggunakan ctrl+z untuk menghentikan proses pada terminal. Hal tersebut mengakibatkan ketika pe...</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/markdown/2017/08/02/artikel-1/</link>
+     <title>Apa itu Markdown ?</title>
+     <description>Markdown  adalah tools yang digunakan untuk mengkonversi text menjadi html dengan berbagai format pada konten web .</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://developerszone.work/2017/08/01/welcome/</link>
+     <title>Selamat datang</title>
+     <description>Selamat membaca dan semoga bermanfaat.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
