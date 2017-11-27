@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading"></h1>
+    <div id="search-container">
+      <div class="jumbotron text-center" style="background: url({{site.urlimg}}questions.png); background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
+      <input type="text" id="search-input" class ='form-control' placeholder=" Search...">
+      </div>
+      <ul id="results-container" class="timeline">
+      </ul>
+    </div>
+
+
+    <div id='isi-default'>
+        <div class="row">
+        {% for post in paginator.posts %}
+
+          <div class="col-sm-4">
+            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+          <span class="label label-success">
+          {{ post.date | date: "%b %-d, %Y" }}
+          </span>
+             <span class="time label label-danger pull-right"> {% for category in post.categories %}
+          {{category | capitalize | replace:'-', ' '}},
+           {% endfor %}</span>
+           <br>
+            <p>
+               {{ post.excerpt }}
+            </p>
+            <div style="border-top: 1px solid #f4f4f4; padding:10px;">
+              <span>
+                  {% if post.comments %} <a href="{{url}}{{ post.url }}#disqus_thread"> <i class="fa fa-comments-o margin-r-5"></i> 0 Comments</a>{% endif %}
+                  </span>
+                  <a href="{{ post.url }}" class="pull-right btn btn-sm btn-danger btn-flat">More..</a>
+            </div>
+          </div>
+
+           {% endfor %}
+        </div>
+          <div class="text-center">
+          {% if paginator.total_pages > 1 %}
+          <ul class="pagination"> 
+            {% if paginator.previous_page %}
+             <li> <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a> </li>
+            {% endif %}
+
+            {% for page in (1..paginator.total_pages) %}
+              {% if page == paginator.page %}
+               <li class="active"> <span class="webjeda">{{ page }}</span> </li>
+              {% elsif page == 1 %}
+                <li><a href="/">{{ page }}</a></li>
+              {% else %}
+                <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a> </li>
+              {% endif %}
+            {% endfor %}
+
+            {% if paginator.next_page %}
+              <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a> </li>
+           
+            {% endif %}
+          </ul>
+          {% endif %}
+          </div>
+      </div>
+    </div>
+
+<!-- Script pointing to search-script.js -->
+<script src="/asset/js/search.js" type="text/javascript"></script>
+<!-- Configuration -->
+<script>
+$('#search-input').on('keyup',function(){
+  var input = $(this);
+  if( input.val() == "" ) {
+    $('#isi-default').show();
+    $('#results-container').hide();
+  }else{
+    $('#isi-default').hide();
+    $('#results-container').show();
+  } 
+});
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/search.json',
+      searchResultTemplate : '<li><div class="timeline-item"><span class="time"><i class="fa fa-clock-o"></i> {category} </span><h2 class="timeline-header"><a href="{url}"> {title} </a></h2><div class="timeline-body"> {content} <a href="{url}" class="pull-right btn btn-sm btn-danger btn-flat">More..</a></div></div></li>'
+    })
+  
+</script>
+

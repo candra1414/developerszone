@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>Bagaimana koneksi database Mysql pada Django ?</title>
+  <meta name="description" content="Pada artikel sebelumnya membahas Bagaimana cara install Django pada linux? untuk kali ini mengatur koneksi databasenya. Karena gak keren kalau gak ada input ...">
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <script type="text/javascript" src="/asset/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-1.11.0.js"> </script>
+  <script type="text/javascript" src="/js/costumes.js"> </script>
+    <!-- Bootstrap Core JavaScript -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="/js/bootstrap.min.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+  <script id="dsq-count-scr" src="//kurtakon-com.disqus.com/count.js" async></script>
+  <link rel="canonical" href="https://developerszone.work/linux/python/django/mysql/2017/11/23/artikel-4/">
+  <link rel="alternate" type="application/atom+xml" title="Developers Zone Work" href="https://developerszone.work/feed.xml" />
+
+</head>
+
+
+  <body>
+    <header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-welcome bg-black" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand"  href="/"><span class="font-bold" style="color:#fff">Developers Zone Work</span></a>
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <!-- /.navbar-header -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="collapse-menu">
+             
+                
+                <li><a href="/about/" style="color:#fff" >Apa?</a></li>
+                    
+                
+                
+                <li><a href="/categori/" style="color:#fff" >Kategori</a></li>
+                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+            <!-- /.navbar-nav -->
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+</header>
+      <br>
+      <br>
+      <div class="wrapper" style="min-height: 416px;">
+      <div>
+          <div class="content">
+                <div class="col-md-2 pull-right">
+        
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-gw-g+2z-2m-45"
+     data-ad-client="ca-pub-8015856612401610"
+     data-ad-slot="3065660661"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="col-md-2 pull-left">
+</div>
+
+<div class="post col-md-8">
+
+  <header class="post-header container-fluid">
+    <h1 class="content-max-width">Bagaimana koneksi database Mysql pada Django ?</h1>
+    <span>Nov 23, 2017 </span>   • <a href="/linux/python/django/mysql/2017/11/23/artikel-4/#disqus_thread"> <i class="fa fa-comments-o margin-r-5"></i> 0 Comments</a>
+    <span class="time label label-danger pull-right"> 
+          Linux,
+           
+          Python,
+           
+          Django,
+           
+          Mysql,
+           </span>
+  <hr>
+  </header>
+
+  <article class="post-content content container-fluid">
+    <p>Pada artikel sebelumnya membahas <a href="https://kurtakon.com/linux/python/2017/11/23/artikel-3/">Bagaimana cara install Django pada linux?</a> untuk kali ini mengatur koneksi databasenya. Karena gak keren kalau gak ada input data donk. Nanti jadi website statik bukan dinamis. Yups untuk kali ini koneksi databasenya menggunakan yang bisa <strong>Mysql</strong> ( ini biasa buat saya belum tentu anda ya hehehe).</p>
+
+<p>Cara koneksi databasenya :</p>
+
+<ul>
+  <li>install konektor antara mysql dan python dulu</li>
+</ul>
+
+<p>Cara installnya biasa <strong>apt-get</strong> (_ini dengen syarat Mysql sudah terinstall loh)</p>
+
+<pre><code># apt-get install python3-mysql.connector
+</code></pre>
+
+<p>kalau belum install _mysql-server_atau biar sekalian atau lupa dan biar gak ragu</p>
+
+<pre><code># apt-get install mysql-server python3-mysql.connector
+</code></pre>
+
+<ul>
+  <li>membuat database di Mysql misal namanya <strong>mysite</strong> (bisa sama dengan nama aplikasinya)</li>
+  <li>merubah file pada <strong>mysite/mysite/settings.py</strong></li>
+</ul>
+
+<p>Perubahan terjadi</p>
+
+<pre><code>DATABASES = {
+   'default': {
+      'ENGINE': 'django.db.backends.sqlite3',
+      'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+   }
+}
+</code></pre>
+
+<p>Menjadi :</p>
+
+<pre><code>DATABASES = {
+    'default': {
+        #'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql.connector.django',
+        'NAME': 'nama_database',
+        'USER': 'user_pada_database',
+        'PASSWORD': 'password_pada_database',
+        'HOST': 'localhost',
+    }
+}
+</code></pre>
+
+<p>Setelah terkoneksi kalian bisa melakukan migrasi databasenya :</p>
+
+<pre><code>$ python manage.py migrate
+</code></pre>
+
+<p>Kalau tidak bisa dan  muncul error</p>
+
+<pre><code>Unknown command: 'migrate'
+Type 'manage.py help' for usage.
+</code></pre>
+
+<p>Maka coba dengan sitak dibawah ini</p>
+
+<pre><code>$ python manage.py syncdb
+</code></pre>
+
+<p>maka akan muncul :</p>
+
+<pre><code>Creating tables ...
+Creating table django_admin_log
+Creating table auth_permission
+Creating table auth_group_permissions
+Creating table auth_group
+Creating table auth_user_groups
+Creating table auth_user_user_permissions
+Creating table auth_user
+Creating table django_content_type
+Creating table django_session
+
+You just installed Django's auth system, which means you don't have any superusers defined.
+Would you like to create one now? (yes/no):
+</code></pre>
+
+<p>Jika sudah yakin tinggal tulis <strong>yes</strong> , kemudian ikuti perintahnya untuk memasukan email, user dan password.</p>
+
+<p>Selesai… Database berhasil terkoneksi serta termigrasi ke Mysql.</p>
+
+
+  </article>
+		  <div class="row">
+			  <div class=" pull-left">
+				
+				  <a href="/linux/python/2017/11/23/artikel-3/" class="btn btn-primary btn-flat" title="Bagaimana cata install Django pada Linux ?"> <span class="fa fa-angle-double-left"></span></a>
+				
+			  </div>
+			<div class="pull-right">
+			
+			  <a href="/jekyll/update/2017/11/27/welcome-to-jekyll/" class="btn btn-primary btn-flat" title="Welcome to Jekyll!"><span class="fa fa-angle-double-right"></span> </a>
+			
+			</div>
+		  </div>
+  	
+<div id="disqus_thread"></div>
+<script>
+
+var disqus_config = function () {
+this.page.url =  "https://kurtakon.com/linux/python/django/mysql/2017/11/23/artikel-4/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "/linux/python/django/mysql/2017/11/23/artikel-4"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://kurtakon-com.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+
+
+
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+    <footer class="site-footer bg-black">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading"><foo>&#169;</foo> 2017 Developers Zone Work</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+         
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Quote : <br> Takonlah sebelum takon itu dilarang.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

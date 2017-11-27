@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>Bagaimana Membuat Migrasi Tabel Database Pada Yii2?</title>
+  <meta name="description" content="Pada yii terdapat fasilitas migrate database dari file php ke database mysql.Letaknya biasa pada consol/migrations/.">
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <script type="text/javascript" src="/asset/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-1.11.0.js"> </script>
+  <script type="text/javascript" src="/js/costumes.js"> </script>
+    <!-- Bootstrap Core JavaScript -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="/js/bootstrap.min.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+  <script id="dsq-count-scr" src="//kurtakon-com.disqus.com/count.js" async></script>
+  <link rel="canonical" href="https://developerszone.work/yii/2017/08/28/artikel-1/">
+  <link rel="alternate" type="application/atom+xml" title="Developers Zone Work" href="https://developerszone.work/feed.xml" />
+
+</head>
+
+
+  <body>
+    <header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-welcome bg-black" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand"  href="/"><span class="font-bold" style="color:#fff">Developers Zone Work</span></a>
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <!-- /.navbar-header -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="collapse-menu">
+             
+                
+                <li><a href="/about/" style="color:#fff" >Apa?</a></li>
+                    
+                
+                
+                <li><a href="/categori/" style="color:#fff" >Kategori</a></li>
+                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+            <!-- /.navbar-nav -->
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+</header>
+      <br>
+      <br>
+      <div class="wrapper" style="min-height: 416px;">
+      <div>
+          <div class="content">
+                <div class="col-md-2 pull-right">
+        
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-gw-g+2z-2m-45"
+     data-ad-client="ca-pub-8015856612401610"
+     data-ad-slot="3065660661"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="col-md-2 pull-left">
+</div>
+
+<div class="post col-md-8">
+
+  <header class="post-header container-fluid">
+    <h1 class="content-max-width">Bagaimana Membuat Migrasi Tabel Database Pada Yii2?</h1>
+    <span>Aug 28, 2017 </span>   • <a href="/yii/2017/08/28/artikel-1/#disqus_thread"> <i class="fa fa-comments-o margin-r-5"></i> 0 Comments</a>
+    <span class="time label label-danger pull-right"> 
+          Yii,
+           </span>
+  <hr>
+  </header>
+
+  <article class="post-content content container-fluid">
+    <p>Pada yii terdapat fasilitas migrate database dari file php ke database mysql.
+Letaknya biasa pada consol/migrations/.</p>
+
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="x">use yii\db\Migration;</span>
+
+<span class="x">class m170828_231501_coba extends Migration</span>
+<span class="x">{</span>
+<span class="x">    public function up(){</span>
+<span class="x">        $tableOptions = null;</span>
+<span class="x">        if ($this-&gt;db-&gt;driverName === &#39;mysql&#39;) {</span>
+<span class="x">            $tableOptions = &#39;CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB&#39;;</span>
+<span class="x">        }</span>
+
+<span class="x">        $this-&gt;createTable(&#39;{ { %coba} } &#39;, [</span>
+<span class="x">        &#39;id_coba&#39; =&gt; $this-&gt;primaryKey(),</span>
+<span class="x">        &#39;data&#39; =&gt; $this-&gt;string()-&gt;notNull()-&gt;unique(),</span>
+<span class="x">        &#39;data_sub&#39; =&gt; $this-&gt;string(32)-&gt;notNull(),</span>
+
+<span class="x">        ], $tableOptions);</span>
+<span class="x">    }</span>
+
+<span class="x">    public function down()</span>
+<span class="x">    {</span>
+<span class="x">        $this-&gt;dropTable(&#39;{ { %coba } }&#39;);</span>
+<span class="x">    }</span>
+<span class="x">}</span></code></pre></div>
+
+<p>Penulisan nama class dengan format m <strong>YYMMDD_HHMMSS</strong>  <strong>Name</strong>
+dan untuk penulisan nama file sama dengan nama class ditambah <strong>.php</strong></p>
+
+<p>Cara melakukan migrasi database silahkan buka terminal, masuk pada projek anda dan tulis script dibawah ini.</p>
+
+<div class="highlight"><pre><code class="language-py" data-lang="py"><span class="err">$</span><span class="n">php</span> <span class="n">yii</span> <span class="n">migrate</span></code></pre></div>
+
+<p>Akan muncul pilihan file yang bisa anda migrasi ke database</p>
+
+<div class="highlight"><pre><code class="language-py" data-lang="py"><span class="n">Yii</span> <span class="n">Migration</span> <span class="n">Tool</span> <span class="p">(</span><span class="n">based</span> <span class="n">on</span> <span class="n">Yii</span> <span class="n">v2</span><span class="o">.</span><span class="mf">0.12</span><span class="p">)</span>
+
+<span class="n">Total</span> <span class="mi">1</span> <span class="n">new</span> <span class="n">migration</span> <span class="n">to</span> <span class="n">be</span> <span class="n">applied</span><span class="p">:</span>
+    <span class="n">m170828_231501_coba</span>
+
+<span class="n">Apply</span> <span class="n">the</span> <span class="n">above</span> <span class="n">migration</span><span class="err">?</span> <span class="p">(</span><span class="n">yes</span><span class="o">|</span><span class="n">no</span><span class="p">)</span> <span class="p">[</span><span class="n">no</span><span class="p">]:</span></code></pre></div>
+
+<p>Ketika kita tulis <strong>Yes</strong> maka akan tergenerate databse</p>
+
+<div class="highlight"><pre><code class="language-py" data-lang="py"><span class="o">***</span> <span class="n">applying</span> <span class="n">m170828_231501_coba</span>
+    <span class="o">&gt;</span> <span class="n">create</span> <span class="n">table</span> <span class="p">{</span> <span class="p">{</span> <span class="o">%</span><span class="n">coba</span> <span class="p">}</span> <span class="p">}</span> <span class="o">...</span> <span class="n">done</span> <span class="p">(</span><span class="n">time</span><span class="p">:</span> <span class="mf">0.105</span><span class="n">s</span><span class="p">)</span>
+<span class="o">***</span> <span class="n">applied</span> <span class="n">m170828_231501_coba</span> <span class="p">(</span><span class="n">time</span><span class="p">:</span> <span class="mf">0.239</span><span class="n">s</span><span class="p">)</span>
+
+
+<span class="mi">1</span> <span class="n">migration</span> <span class="n">was</span> <span class="n">applied</span><span class="o">.</span>
+
+<span class="n">Migrated</span> <span class="n">up</span> <span class="n">successfully</span><span class="o">.</span></code></pre></div>
+
+<p>Tabel <strong>coba</strong> berhasil di buat seperti dibawah ini.</p>
+
+<p><img src="http://127.0.0.1:4000/asset/img/img-12.png" alt="alt text" title="view tabel coba" /></p>
+
+
+
+  </article>
+		  <div class="row">
+			  <div class=" pull-left">
+				
+				  <a href="/composer/yii/2017/08/24/artikel-2/" class="btn btn-primary btn-flat" title="Bagaimana cara Install Yii2 pada Linux dengan Composer?"> <span class="fa fa-angle-double-left"></span></a>
+				
+			  </div>
+			<div class="pull-right">
+			
+			  <a href="/jekyll/disqus/2017/08/30/artikel-1/" class="btn btn-primary btn-flat" title="Bagaimana Memasang Disqus Pada Jekyll?"><span class="fa fa-angle-double-right"></span> </a>
+			
+			</div>
+		  </div>
+  	
+<div id="disqus_thread"></div>
+<script>
+
+var disqus_config = function () {
+this.page.url =  "https://kurtakon.com/yii/2017/08/28/artikel-1/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "/yii/2017/08/28/artikel-1"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://kurtakon-com.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+
+
+
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+    <footer class="site-footer bg-black">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading"><foo>&#169;</foo> 2017 Developers Zone Work</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+         
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Quote : <br> Takonlah sebelum takon itu dilarang.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

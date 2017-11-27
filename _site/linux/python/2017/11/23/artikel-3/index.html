@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>Bagaimana cata install Django pada Linux ?</title>
+  <meta name="description" content="Selamat malam dan dimana mata butuh kopi. Apa yang pertama kali anda pikirkan ketika dengar kata Python? Pasti orang awan akan bilang ular Python .Akan tetap...">
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <script type="text/javascript" src="/asset/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-1.11.0.js"> </script>
+  <script type="text/javascript" src="/js/costumes.js"> </script>
+    <!-- Bootstrap Core JavaScript -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="/js/bootstrap.min.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+  <script id="dsq-count-scr" src="//kurtakon-com.disqus.com/count.js" async></script>
+  <link rel="canonical" href="https://developerszone.work/linux/python/2017/11/23/artikel-3/">
+  <link rel="alternate" type="application/atom+xml" title="Developers Zone Work" href="https://developerszone.work/feed.xml" />
+
+</head>
+
+
+  <body>
+    <header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-welcome bg-black" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand"  href="/"><span class="font-bold" style="color:#fff">Developers Zone Work</span></a>
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <!-- /.navbar-header -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="collapse-menu">
+             
+                
+                <li><a href="/about/" style="color:#fff" >Apa?</a></li>
+                    
+                
+                
+                <li><a href="/categori/" style="color:#fff" >Kategori</a></li>
+                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+            <!-- /.navbar-nav -->
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+</header>
+      <br>
+      <br>
+      <div class="wrapper" style="min-height: 416px;">
+      <div>
+          <div class="content">
+                <div class="col-md-2 pull-right">
+        
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-gw-g+2z-2m-45"
+     data-ad-client="ca-pub-8015856612401610"
+     data-ad-slot="3065660661"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="col-md-2 pull-left">
+</div>
+
+<div class="post col-md-8">
+
+  <header class="post-header container-fluid">
+    <h1 class="content-max-width">Bagaimana cata install Django pada Linux ?</h1>
+    <span>Nov 23, 2017 </span>   • <a href="/linux/python/2017/11/23/artikel-3/#disqus_thread"> <i class="fa fa-comments-o margin-r-5"></i> 0 Comments</a>
+    <span class="time label label-danger pull-right"> 
+          Linux,
+           
+          Python,
+           </span>
+  <hr>
+  </header>
+
+  <article class="post-content content container-fluid">
+    <p>Selamat malam dan dimana mata butuh kopi. Apa yang pertama kali anda pikirkan ketika dengar kata Python? Pasti orang awan akan bilang ular Python .Akan tetapi kali ini saya tidak akan membahas ular (asli ular) namun bahasa pemerogaman Python. Python <em>is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991</em> (menurut Wikipedia).</p>
+
+<p>Pada judul artikel <strong>Bagaimana cara install Django pada Linux ?</strong>  kenapa bahas Python apa hubungannya?</p>
+
+<p><strong>Django</strong> adalah salah satu dari web framework open source berbasis Python yang didesain untuk membuat aplikasi web yang dinamis yang telah memiliki banyak fitur dan aman.</p>
+
+<p>Bagaimana cara install ?</p>
+
+<ul>
+  <li>harus install Python</li>
+  <li>install framework Django</li>
+</ul>
+
+<p>Cara install sama sepertai aplikasi lain di linux menggunakan <strong>apt-get</strong></p>
+
+<pre><code>$ apt-get install python-django
+</code></pre>
+
+<ul>
+  <li>Buat aplikasi</li>
+</ul>
+
+<p>Cara membuat aplikasi buka terminal misal nama aplikasi nya <em>mysite</em></p>
+
+<pre><code>$ django-admin startproject mysite
+</code></pre>
+
+<ul>
+  <li>Jalankan Aplikasinya</li>
+</ul>
+
+<p>Cara menjalnkan masih menggunakan terminal, masuk ke direktori aplikasinya (menggunakan <strong>cd</strong> ) kemudian jalankan sintak dibawah ini :</p>
+
+<pre><code>$ python manage.py runserver
+</code></pre>
+
+<p>Kemudian akan muncul :</p>
+
+<pre><code>Validating models...
+0 errors found
+November 23, 2017 - 15:29:25
+Django version 1.6.11, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[23/Nov/2017 15:29:30] "GET / HTTP/1.1" 200 1757
+</code></pre>
+
+<p>dari data diatas diketahui aplikasi berjalan pada port 8000. Untuk mengetahui buka web browser dan masukan link <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a></p>
+
+<p>Hasilnya…</p>
+
+<p><img src="http://127.0.0.1:4000/asset/img/img-23nov2017-1.png" alt="alt text" title="hello word" /></p>
+
+
+
+  </article>
+		  <div class="row">
+			  <div class=" pull-left">
+				
+				  <a href="/linux/2017/11/23/artikel-2/" class="btn btn-primary btn-flat" title="Bagaimana uninstall aplikasi pada linux dengan terminal ?"> <span class="fa fa-angle-double-left"></span></a>
+				
+			  </div>
+			<div class="pull-right">
+			
+			  <a href="/linux/python/django/mysql/2017/11/23/artikel-4/" class="btn btn-primary btn-flat" title="Bagaimana koneksi database Mysql pada Django ?"><span class="fa fa-angle-double-right"></span> </a>
+			
+			</div>
+		  </div>
+  	
+<div id="disqus_thread"></div>
+<script>
+
+var disqus_config = function () {
+this.page.url =  "https://kurtakon.com/linux/python/2017/11/23/artikel-3/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "/linux/python/2017/11/23/artikel-3"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://kurtakon-com.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+
+
+
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+    <footer class="site-footer bg-black">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading"><foo>&#169;</foo> 2017 Developers Zone Work</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+         
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Quote : <br> Takonlah sebelum takon itu dilarang.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

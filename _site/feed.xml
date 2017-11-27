@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developers Zone Work</title>
+    <description>Quote : &lt;br&gt; Takonlah sebelum takon itu dilarang.
+</description>
+    <link>https://developerszone.work/</link>
+    <atom:link href="https://developerszone.work/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 27 Nov 2017 11:06:40 +0700</pubDate>
+    <lastBuildDate>Mon, 27 Nov 2017 11:06:40 +0700</lastBuildDate>
+    <generator>Jekyll v2.5.0</generator>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 27 Nov 2017 17:50:06 +0700</pubDate>
+        <link>https://developerszone.work/jekyll/update/2017/11/27/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">https://developerszone.work/jekyll/update/2017/11/27/welcome-to-jekyll/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Bagaimana koneksi database Mysql pada Django ?</title>
+        <description>&lt;p&gt;Pada artikel sebelumnya membahas &lt;a href=&quot;https://kurtakon.com/linux/python/2017/11/23/artikel-3/&quot;&gt;Bagaimana cara install Django pada linux?&lt;/a&gt; untuk kali ini mengatur koneksi databasenya. Karena gak keren kalau gak ada input data donk. Nanti jadi website statik bukan dinamis. Yups untuk kali ini koneksi databasenya menggunakan yang bisa &lt;strong&gt;Mysql&lt;/strong&gt; ( ini biasa buat saya belum tentu anda ya hehehe).&lt;/p&gt;
+
+&lt;p&gt;Cara koneksi databasenya :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;install konektor antara mysql dan python dulu&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cara installnya biasa &lt;strong&gt;apt-get&lt;/strong&gt; (_ini dengen syarat Mysql sudah terinstall loh)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# apt-get install python3-mysql.connector
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;kalau belum install _mysql-server_atau biar sekalian atau lupa dan biar gak ragu&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# apt-get install mysql-server python3-mysql.connector
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;membuat database di Mysql misal namanya &lt;strong&gt;mysite&lt;/strong&gt; (bisa sama dengan nama aplikasinya)&lt;/li&gt;
+  &lt;li&gt;merubah file pada &lt;strong&gt;mysite/mysite/settings.py&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Perubahan terjadi&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DATABASES = {
+   &#39;default&#39;: {
+      &#39;ENGINE&#39;: &#39;django.db.backends.sqlite3&#39;,
+      &#39;NAME&#39;: os.path.join(BASE_DIR, &#39;db.sqlite3&#39;),
+   }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Menjadi :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DATABASES = {
+    &#39;default&#39;: {
+        #&#39;ENGINE&#39;: &#39;django.db.backends.mysql&#39;,
+        &#39;ENGINE&#39;: &#39;mysql.connector.django&#39;,
+        &#39;NAME&#39;: &#39;nama_database&#39;,
+        &#39;USER&#39;: &#39;user_pada_database&#39;,
+        &#39;PASSWORD&#39;: &#39;password_pada_database&#39;,
+        &#39;HOST&#39;: &#39;localhost&#39;,
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Setelah terkoneksi kalian bisa melakukan migrasi databasenya :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ python manage.py migrate
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Kalau tidak bisa dan  muncul error&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Unknown command: &#39;migrate&#39;
+Type &#39;manage.py help&#39; for usage.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Maka coba dengan sitak dibawah ini&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ python manage.py syncdb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;maka akan muncul :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Creating tables ...
+Creating table django_admin_log
+Creating table auth_permission
+Creating table auth_group_permissions
+Creating table auth_group
+Creating table auth_user_groups
+Creating table auth_user_user_permissions
+Creating table auth_user
+Creating table django_content_type
+Creating table django_session
+
+You just installed Django&#39;s auth system, which means you don&#39;t have any superusers defined.
+Would you like to create one now? (yes/no):
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Jika sudah yakin tinggal tulis &lt;strong&gt;yes&lt;/strong&gt; , kemudian ikuti perintahnya untuk memasukan email, user dan password.&lt;/p&gt;
+
+&lt;p&gt;Selesai… Database berhasil terkoneksi serta termigrasi ke Mysql.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Nov 2017 15:06:58 +0700</pubDate>
+        <link>https://developerszone.work/linux/python/django/mysql/2017/11/23/artikel-4/</link>
+        <guid isPermaLink="true">https://developerszone.work/linux/python/django/mysql/2017/11/23/artikel-4/</guid>
+        
+        
+        <category>linux</category>
+        
+        <category>python</category>
+        
+        <category>django</category>
+        
+        <category>mysql</category>
+        
+      </item>
+    
+      <item>
+        <title>Bagaimana cata install Django pada Linux ?</title>
+        <description>&lt;p&gt;Selamat malam dan dimana mata butuh kopi. Apa yang pertama kali anda pikirkan ketika dengar kata Python? Pasti orang awan akan bilang ular Python .Akan tetapi kali ini saya tidak akan membahas ular (asli ular) namun bahasa pemerogaman Python. Python &lt;em&gt;is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991&lt;/em&gt; (menurut Wikipedia).&lt;/p&gt;
+
+&lt;p&gt;Pada judul artikel &lt;strong&gt;Bagaimana cara install Django pada Linux ?&lt;/strong&gt;  kenapa bahas Python apa hubungannya?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Django&lt;/strong&gt; adalah salah satu dari web framework open source berbasis Python yang didesain untuk membuat aplikasi web yang dinamis yang telah memiliki banyak fitur dan aman.&lt;/p&gt;
+
+&lt;p&gt;Bagaimana cara install ?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;harus install Python&lt;/li&gt;
+  &lt;li&gt;install framework Django&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cara install sama sepertai aplikasi lain di linux menggunakan &lt;strong&gt;apt-get&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ apt-get install python-django
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Buat aplikasi&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cara membuat aplikasi buka terminal misal nama aplikasi nya &lt;em&gt;mysite&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ django-admin startproject mysite
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Jalankan Aplikasinya&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cara menjalnkan masih menggunakan terminal, masuk ke direktori aplikasinya (menggunakan &lt;strong&gt;cd&lt;/strong&gt; ) kemudian jalankan sintak dibawah ini :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ python manage.py runserver
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Kemudian akan muncul :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Validating models...
+0 errors found
+November 23, 2017 - 15:29:25
+Django version 1.6.11, using settings &#39;mysite.settings&#39;
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[23/Nov/2017 15:29:30] &quot;GET / HTTP/1.1&quot; 200 1757
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;dari data diatas diketahui aplikasi berjalan pada port 8000. Untuk mengetahui buka web browser dan masukan link &lt;a href=&quot;http://127.0.0.1:8000/&quot;&gt;http://127.0.0.1:8000/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Hasilnya…&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-23nov2017-1.png&quot; alt=&quot;alt text&quot; title=&quot;hello word&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 23 Nov 2017 15:06:58 +0700</pubDate>
+        <link>https://developerszone.work/linux/python/2017/11/23/artikel-3/</link>
+        <guid isPermaLink="true">https://developerszone.work/linux/python/2017/11/23/artikel-3/</guid>
+        
+        
+        <category>linux</category>
+        
+        <category>python</category>
+        
+      </item>
+    
+      <item>
+        <title>Bagaimana uninstall aplikasi pada linux dengan terminal ?</title>
+        <description>&lt;p&gt;Sering kita main install aplikasi laptop kita. Padahal tidak penting sama sekali di sentuh juga tidak. Aplikasi tersebut tanpa sadari mengurangi kapasitas hardisk kita. Yang jadi masalah bagaimana cara unistall aplikasi tersebut pada linux ? &lt;em&gt;*karena saya pengguna linux&lt;/em&gt; hehe… heheh…&lt;/p&gt;
+
+&lt;p&gt;Pada artikel kali ini saya akan menulis cara uninstall aplikasi pada linux mengunakan terminal.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;cari pada list nama aplikasinya :&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Untuk melihat aplikasi yang telah kita install bisa menggunakan &lt;strong&gt;dpkg&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ dpkg --list
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;setelah muncul :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ii  gir1.2-vte-2.90                      1:0.34.9-1ubuntu2       amd64                   GObject introspection data for the VTE library
+ii  gir1.2-webkit-3.0                    2.4.10-0ubuntu0.14.04.1 amd64                   Web content engine library for GTK+ - GObject introspection data
+ii  gir1.2-wnck-3.0:amd64                3.14.0-1~14.04~ricotz1  amd64                   GObject introspection data for the WNCK library
+ii  git                                  1:1.9.1-1ubuntu0.7      amd64                   fast, scalable, distributed revision control system
+ii  git-man                              1:1.9.1-1ubuntu0.7      all                     fast, scalable, distributed revision control system (manual pages)
+ii  gitg                                 0.2.7-2                 amd64                   git repository viewer
+ii  gitk                                 1:1.9.1-1ubuntu0.7      all                     fast, scalable, distributed revision control system (revision tree visualizer
+ii  gitkraken                            3.2.2                   amd64                   Unleash your repo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;setelah muncul, pilih apalikasi yang akan di &lt;em&gt;uninstall&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Unistall aplikasinya :&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Misal saya mau &lt;em&gt;uninstall&lt;/em&gt;  apliaksi &lt;strong&gt;gitkraken&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ apt-get --purge remove gitkraken
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;setelah itu akan mendapatkan perintah konfirmasi , intinya yakin mau di unistall&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libzip4
+Use &#39;apt-get autoremove&#39; to remove it.
+The following packages will be REMOVED:
+  gitkraken*
+0 upgraded, 0 newly installed, 1 to remove and 116 not upgraded.
+After this operation, 248 MB disk space will be freed.
+Do you want to continue? [Y/n] 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Jika iya tulis &lt;strong&gt;y&lt;/strong&gt; jika tidak jadi tinggal tulis &lt;strong&gt;n&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ini jika tulis &lt;strong&gt;y&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(Reading database ... 1350641 files and directories currently installed.)
+Removing gitkraken (3.2.2) ...
+Processing triggers for gnome-menus (3.10.1-0ubuntu2) ...
+Processing triggers for desktop-file-utils (0.22-1ubuntu1) ...
+Processing triggers for bamfdaemon (0.5.1+14.04.20140409-0ubuntu1+elementary2~ubuntu14.04.1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for mime-support (3.54ubuntu1.1) ...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Oke aplikasi berhasil dihapus.. bye..bye…&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Nov 2017 15:06:58 +0700</pubDate>
+        <link>https://developerszone.work/linux/2017/11/23/artikel-2/</link>
+        <guid isPermaLink="true">https://developerszone.work/linux/2017/11/23/artikel-2/</guid>
+        
+        
+        <category>linux</category>
+        
+      </item>
+    
+      <item>
+        <title>Bagaimana install file deb pada linux ?</title>
+        <description>&lt;p&gt;Ketika kita membutukahan aplikasi baru pada linux, kita terkadang mencari pada internet panggil saja mbah google. Aplikasi yang kita dapat berformat &lt;strong&gt;deb&lt;/strong&gt;. dan yang menjadi pertanyaan bagaimana cara installnya. Pasti binggung kan kalau gak binggung tidak akan cari tau donk… hehehe maaf bercanda.&lt;/p&gt;
+
+&lt;p&gt;Padahal caranya cukup mudah, buka terminal masukan script dibawah ini :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo dpkg -i nama_aplikasinya.deb 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sekian semoga membantu.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Nov 2017 15:06:58 +0700</pubDate>
+        <link>https://developerszone.work/linux/2017/11/23/artikel-1/</link>
+        <guid isPermaLink="true">https://developerszone.work/linux/2017/11/23/artikel-1/</guid>
+        
+        
+        <category>linux</category>
+        
+      </item>
+    
+      <item>
+        <title>Bagaimana merubah versi php pada nginx linux FastCGI?</title>
+        <description>&lt;p&gt;Pada artikel sebelumnnya saya membahas &lt;a href=&quot;https://developerszone.work/linux/apache/php/2017/09/04/artikel-2/&quot;&gt;Bagaimana melakukan switch multipel versi aplikasi php5 ke php7 pada apache linux??&lt;/a&gt; Untuk kali ini saya akan membahas bagaimana jika merubah versi php untuk web server nginx pada linux?&lt;/p&gt;
+
+&lt;p&gt;Sebelumnya untuk install versi php yang diinginkan,misal php5 dan php7&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; untuk php5&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $ apt-get install php5-fpm 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;-&amp;gt; untuk php7.0&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $ apt-get install php7-fpm 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Bagaimana merubah settinganya?&lt;/p&gt;
+
+&lt;p&gt;Buka file /etc/nginx/sites-available/default:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;server {
+    listen   80;
+    access_log /var/log/nginx/access.log;
+    error_log /var/log/nginx/error.log;
+    root /var/www/html;
+    index index.php index.html;
+    location / {
+        try_files $uri $uri/ /index.php?$args ;
+    }
+    location ~ \.php$ {
+        fastcgi_pass unix:/var/run/php5-fpm.sock;
+        fastcgi_index index.php;
+        include fastcgi_params;
+        fastcgi_read_timeout 300;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-13nov2017-2.png&quot; alt=&quot;alt text&quot; title=&quot;view php5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pada &lt;strong&gt;location&lt;/strong&gt; terdapat &lt;strong&gt;fastcgi_pass unix:&lt;/strong&gt;  yang mengacu pada versi &lt;em&gt;php&lt;/em&gt; yang berjalan. Terlihat &lt;strong&gt;/var/run/php5-fpm.sock&lt;/strong&gt; versi php5 yang saat ini berjalan. Untuk merubahnya, kita harus mencari versi pada folder &lt;strong&gt;/var/run/&lt;/strong&gt;   &lt;strong&gt;php7-fpm.sock&lt;/strong&gt; berada di folder mana pada di install (pada kasus saya file tersebut terdapat didalam folder php).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;server {
+    listen   80;
+    access_log /var/log/nginx/access.log;
+    error_log /var/log/nginx/error.log;
+    root /var/www/html;
+    index index.php index.html;
+    location / {
+        try_files $uri $uri/ /index.php?$args ;
+    }
+    location ~ \.php$ {
+        fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+        fastcgi_index index.php;
+        include fastcgi_params;
+        fastcgi_read_timeout 300;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Setelah serlesai restart nginx&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $ sudo service nginx restart
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-13nov2017-1.png&quot; alt=&quot;alt text&quot; title=&quot;view php7&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 13 Nov 2017 15:06:58 +0700</pubDate>
+        <link>https://developerszone.work/linux/nginx/php/2017/11/13/artikel-1/</link>
+        <guid isPermaLink="true">https://developerszone.work/linux/nginx/php/2017/11/13/artikel-1/</guid>
+        
+        
+        <category>linux</category>
+        
+        <category>nginx</category>
+        
+        <category>php</category>
+        
+      </item>
+    
+      <item>
+        <title>Bagaimana Contoh Menggunakan Onkeyup dan Onkeypress pada Javascript ?</title>
+        <description>&lt;p&gt;Pada Kali ini saya ingin memberikan contoh sederhana menggunakan &lt;strong&gt;Javascript&lt;/strong&gt; . Untuk kali ini saya akan menggukan &lt;strong&gt;Onkeyup&lt;/strong&gt; dan &lt;strong&gt;Onkeypress&lt;/strong&gt; . Pada contoh penggunaan ini saya menggunakan Yii2, Jadi jika anda ingin menggukan untuk code lain silahkan modifikasi sendiri form nya hehehe.&lt;/p&gt;
+
+&lt;p&gt;Form untuk input :&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;textInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;nilai&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;class&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;form-control nilai&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;placeholder&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Nilai Awal&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;id&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;nilai_awal&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt; &amp;lt;br&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt; &amp;lt;br&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$jumlah&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+ &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;textInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;input&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;class&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;pengurang form-control nilai&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;placeholder&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Input ke-&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;id&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;input&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt; &amp;lt;br&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt; &amp;lt;br&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;textInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Jumlah&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;class&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;form-control&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;placeholder&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Jumlah&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;id&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;jumlah&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;readOnly&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Javascript :&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;x&quot;&gt;$js=&amp;lt;&amp;lt;&amp;lt;JS&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;    var numItems = $(&amp;#39;.pengurang&amp;#39;).length;&lt;/span&gt;
+
+&lt;span class=&quot;x&quot;&gt;    $(&amp;#39;.nilai&amp;#39;).on(&amp;#39;keypress&amp;#39;,&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;        function (evt) {&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;          evt = (evt) ? evt : window.event;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;          var charCode = (evt.which) ? evt.which : evt.keyCode;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;          if (charCode &amp;gt; 31 &amp;amp;&amp;amp; (charCode &amp;lt; 48 || charCode &amp;gt; 57)) {&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;              return false;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;          }&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;          return true;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;    });&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;    var jumlah =0;&lt;/span&gt;
+
+&lt;span class=&quot;x&quot;&gt;    $(&amp;#39;#nilai_awal&amp;#39;).on(&amp;#39;keyup&amp;#39;,function(){&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;        jumlah =$(this).val();&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;        for (i=1; i &amp;lt;=numItems ; i++) { &lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;            jumlah = jumlah - $(&amp;#39;#input&amp;#39;+i).val();&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;        }&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;        $(&amp;#39;#jumlah&amp;#39;).val(jumlah);&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;    });&lt;/span&gt;
+
+&lt;span class=&quot;x&quot;&gt;    $(&amp;#39;.pengurang&amp;#39;).on(&amp;#39;keyup&amp;#39;,function(){&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;        jumlah = $(&amp;#39;#nilai_awal&amp;#39;).val();&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;        for (i=1; i &amp;lt;=numItems ; i++) { &lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;            jumlah = jumlah - $(&amp;#39;#input&amp;#39;+i).val();&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;        }&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;        $(&amp;#39;#jumlah&amp;#39;).val(jumlah);&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;    });&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;    &lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;JS;&lt;/span&gt;
+
+&lt;span class=&quot;x&quot;&gt;$this-&amp;gt;registerJs($js, $this::POS_READY);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Hasil Code :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tampilan awal&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-26okt2017-1.png&quot; alt=&quot;alt text&quot; title=&quot;view&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tampilan pada saat input nilai awal&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-26okt2017-2.png&quot; alt=&quot;alt text&quot; title=&quot;view&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tampilan pada saat input nilai pengurangan&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-26okt2017-3.png&quot; alt=&quot;alt text&quot; title=&quot;view&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-26okt2017-4.png&quot; alt=&quot;alt text&quot; title=&quot;view&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Penjelasan :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fungsi di atas digunakan agar nilai yang di inputkan hanya angka saja untuk class nilai pada saat di ketik.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.nilai&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;keypress&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;charCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;which&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;which&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keyCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;charCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;31&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;charCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;48&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;charCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;57&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Kita dapat menghitung jumlah variabel yang menggunakan class pada halaman tersebut dengan &lt;strong&gt;length&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;numItems&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.pengurang&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pada saat on keyup untuk form input pada id nilai_awal kita melakukan perulangan untuk mengurangi nilai awal dan memunculkannya pada jumlah.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#nilai_awal&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;keyup&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;jumlah&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;numItems&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+            &lt;span class=&quot;nx&quot;&gt;jumlah&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;jumlah&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#input&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#jumlah&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;jumlah&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pada saat on keyup untuk form input pada class pengurang kita melakukan perulangan untuk mengurangi nilai awal dan memunculkannya pada jumlah.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.pengurang&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;keyup&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;jumlah&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;numItems&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+            &lt;span class=&quot;nx&quot;&gt;jumlah&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;jumlah&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#input&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#jumlah&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;jumlah&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Semoga membantu.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 26 Oct 2017 10:06:58 +0700</pubDate>
+        <link>https://developerszone.work/javascript/html/php/2017/10/26/artikel-1/</link>
+        <guid isPermaLink="true">https://developerszone.work/javascript/html/php/2017/10/26/artikel-1/</guid>
+        
+        
+        <category>javascript</category>
+        
+        <category>html</category>
+        
+        <category>php</category>
+        
+      </item>
+    
+      <item>
+        <title>Bagaimana membuat pagination pada Jekyll ?</title>
+        <description>&lt;p&gt;Pagination sering kita jumpai pada web-web terutama pada blog agar tampilan list pada beranda tidak terlalu banyak kebawah. Pada kali ini saya akan mendemokan bagaimana memasang pagination pada Jekyll terutama untuk tampilan awal website agar post blog tidak terlalu kebawah (jika artikelnya sudah banyak).&lt;/p&gt;
+
+&lt;p&gt;Pada Jekyll versi 3 sudah terdapat  plugin &lt;strong&gt;jekyll-paginate&lt;/strong&gt;  sehingga kita cukup memanggilnya pada &lt;strong&gt;_config.yml&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;plugins: [jekyll-paginate] 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Setelah itu tentukan jumlah maksimum list pada setiap halaman yang kan digunakan, misal maksimal 10 list post pada setiap halaman.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;paginate: 10
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Kemudian tentukan bagaimana halaman atau format url untuk setiap halaman&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;paginate_path: &quot;/page:num/&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;maka tampilannya untuk page kedua&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;https://kurtakon.com/page2/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;callout callout-danger&quot;&gt;
+&lt;h4&gt; Pagination hanya berjalan pada file html&lt;/h4&gt;
+
+&lt;p&gt; Pagination hanya tidak bisa berjalan file Markdown atau pada site jekyll, pagination hanya bisa dipanggil pada file html dengan nama file &lt;b&gt; index.html&lt;/b&gt; &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;table class=&quot;table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Attribute&lt;/th&gt;
+      &lt;th&gt;Keterangan&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;page&lt;/td&gt;
+      &lt;td&gt;halaman page berada (posisinya)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;per_page&lt;/td&gt;
+      &lt;td&gt;menampilkan jumlah maksimum list tiap halaman&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;posts&lt;/td&gt;
+      &lt;td&gt;list dari post untuk halaman tersebut&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;total_posts&lt;/td&gt;
+      &lt;td&gt;jumlah seluruh postingan&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;total_pages&lt;/td&gt;
+      &lt;td&gt;jumlah seluruh halaman hasil pagination&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;previous_page&lt;/td&gt;
+      &lt;td&gt;halaman sebelumnya&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;previous_page_path&lt;/td&gt;
+      &lt;td&gt;untuk link nomor halaman dari halaman pagination sebelumnya, atau  jika hasilnya null maka tidak ada halaman sebelumnya&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;next_page&lt;/td&gt;
+      &lt;td&gt;halaman selanjutnya&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;next_page_path&lt;/td&gt;
+      &lt;td&gt;untuk link nomor halaman dari halaman pagination sebelumnya, atau  jika hasilnya null maka tidak ada halaman selanjutnya&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Kode untuk menampilkan daftar atau list artikel yang sudah di padding&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-20okt2017-1.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Kode untuk membuat button previous dan next page untuk halaman padding&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-20okt2017-2.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hasil tampilan :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-20okt2017-3.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 20 Oct 2017 10:06:58 +0700</pubDate>
+        <link>https://developerszone.work/jekyll/2017/10/20/artikel-1/</link>
+        <guid isPermaLink="true">https://developerszone.work/jekyll/2017/10/20/artikel-1/</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>Apa itu Web Server?</title>
+        <description>&lt;p&gt;Web Server adalah perangkat lunak ataupun perangkat keras yang menyediakan layanan akses kepada pengguna melalui protokol komunikasi HTTP atau HTTPS atas berkas-berkas yang terdapat pada suatu situs web dalam layanan ke pengguna dengan menggunakan aplikasi tertentu seperti website.&lt;/p&gt;
+
+&lt;h3&gt;Apa Fungsi Web Server?&lt;/h3&gt;
+
+&lt;p&gt;Fungsi utama sebuah server web adalah untuk mentransfer berkas atas permintaan pengguna melalui protokol komunikasi yang telah ditentukan. Disebabkan sebuah halaman web dapat terdiri atas berkas teks, gambar, video, dan lainnya pemanfaatan server web berfungsi pula untuk mentransfer seluruh aspek pemberkasan dalam sebuah halaman web yang terkait; termasuk di dalamnya teks, gambar, video, atau lainnya.&lt;/p&gt;
+
+&lt;p&gt;Pada menggunaannya web server tidak hanya digunakan pada pembuatan website tapi juga bisa digunakan perangkat lain seperti printer,router, kemere web yang mengakses jaringan lokal.&lt;/p&gt;
+
+&lt;p&gt;Ada bermacam macam Web Server pada saat ini :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Apache HTTP Server&lt;/li&gt;
+  &lt;li&gt;Apache Tomcat&lt;/li&gt;
+  &lt;li&gt;Caddy&lt;/li&gt;
+  &lt;li&gt;Lighttpd&lt;/li&gt;
+  &lt;li&gt;Nginx&lt;/li&gt;
+  &lt;li&gt;Jetty&lt;/li&gt;
+  &lt;li&gt;IIS&lt;/li&gt;
+  &lt;li&gt;WEBrick&lt;/li&gt;
+  &lt;li&gt;Gunicorn&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Thu, 19 Oct 2017 16:06:58 +0700</pubDate>
+        <link>https://developerszone.work/php/server/2017/10/19/artikel-3/</link>
+        <guid isPermaLink="true">https://developerszone.work/php/server/2017/10/19/artikel-3/</guid>
+        
+        
+        <category>php</category>
+        
+        <category>server</category>
+        
+      </item>
+    
+      <item>
+        <title>Apa itu PHP?</title>
+        <description>&lt;p&gt;Sering kita mendegar dengan kata &lt;strong&gt;PHP&lt;/strong&gt; , perlu diingat &lt;strong&gt;PHP&lt;/strong&gt; di sini bukan Pemberi harapan palsu namun PHP (Hypertext Preprocessor) yaitu bahasa pemerograman yang sering digunakan bersamaan dengan HTML. Php banyak digunakan untuk membuat situs web dinamis.&lt;/p&gt;
+
+&lt;p&gt;PHP singkatan dari &lt;em&gt;Personal Home Page&lt;/em&gt; pertama dibuat oleh &lt;em&gt;Rasmus Lerdorf&lt;/em&gt; tahun 1995. Pertama di buat PHP dengan &lt;em&gt;Common Gateway Interface (CGI)&lt;/em&gt; menggunakan bahasa &lt;strong&gt;C&lt;/strong&gt; . Seiring perkembanggan jaman muncul PHP3, PHP4, PHP5 (yang sampai saat ini masih digunakan), serta yang terakhir PHP7.&lt;/p&gt;
+
+&lt;p&gt;Bagaimana Menjalankan PHP ?&lt;/p&gt;
+
+&lt;p&gt;Untuk menjalankan PHP kita memerlukan &lt;a href=&quot;https://kurtakon.com/php/server/2017/10/19/artikel-3/&quot;&gt;&lt;em&gt;Web Server&lt;/em&gt;&lt;/a&gt;. Ada bermacam macam web server seperti &lt;em&gt;Apache&lt;/em&gt; atau bisa juga &lt;em&gt;Nginx&lt;/em&gt; yang bisa kita gunakan. Pada saat ini penulis menggunakan &lt;em&gt;Nginx&lt;/em&gt;  yang dijalankan pada &lt;em&gt;localhost&lt;/em&gt; atau IP &lt;em&gt;127.0.0.1&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Contoh script :&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Ini Uji coba PHP&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Hasilnya :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-19okt2017-4.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Contoh Membuat penjumlahan dengan PHP&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+   &lt;span class=&quot;nv&quot;&gt;$n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;nv&quot;&gt;$m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;n =&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;lt;/br&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;m =&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;lt;/br&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;jika n + m &amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;hasilnya&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Hasilnya :
+&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-19okt2017-5.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Membuat perulangan dengan &lt;strong&gt;for&lt;/strong&gt; untuk menghasilkan table :&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;x&quot;&gt;&amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;    table {&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;        border-collapse: collapse;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;    }&lt;/span&gt;
+
+&lt;span class=&quot;x&quot;&gt;    table, th, td {&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;        border: 1px solid black;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;        padding: 10px;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;    }&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;&amp;lt;table&amp;gt; &lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;&amp;lt;tr&amp;gt; &amp;lt;th colspan=&amp;quot;2&amp;quot;&amp;gt;Contoh Table&amp;lt;/th&amp;gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;    &amp;lt;tr&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;        &amp;lt;td&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;        &amp;lt;td&amp;gt; Baris pada tabel  &lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;x&quot;&gt;    &amp;lt;/tr&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;x&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Hasilnya :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://127.0.0.1:4000/asset/img/img-19okt2017-6.png&quot; alt=&quot;alt text&quot; title=&quot;view html&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 19 Oct 2017 16:06:58 +0700</pubDate>
+        <link>https://developerszone.work/html/php/2017/10/19/artikel-2/</link>
+        <guid isPermaLink="true">https://developerszone.work/html/php/2017/10/19/artikel-2/</guid>
+        
+        
+        <category>html</category>
+        
+        <category>php</category>
+        
+      </item>
+    
+  </channel>
+</rss>

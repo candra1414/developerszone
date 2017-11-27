@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>Bagaimana melakukan switch multipel versi aplikasi php5 ke php7 pada apache linux?</title>
+  <meta name="description" content="Seperti pada artikel sebelumnnya saya membahas Bagaimana melakukan switch multipel versi aplikasi pada linux?Untuk kali ini saya akan membahas Bagaimana mela...">
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <script type="text/javascript" src="/asset/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-1.11.0.js"> </script>
+  <script type="text/javascript" src="/js/costumes.js"> </script>
+    <!-- Bootstrap Core JavaScript -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="/js/bootstrap.min.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+  <script id="dsq-count-scr" src="//kurtakon-com.disqus.com/count.js" async></script>
+  <link rel="canonical" href="https://developerszone.work/linux/apache/php/2017/09/04/artikel-2/">
+  <link rel="alternate" type="application/atom+xml" title="Developers Zone Work" href="https://developerszone.work/feed.xml" />
+
+</head>
+
+
+  <body>
+    <header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-welcome bg-black" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand"  href="/"><span class="font-bold" style="color:#fff">Developers Zone Work</span></a>
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <!-- /.navbar-header -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="collapse-menu">
+             
+                
+                <li><a href="/about/" style="color:#fff" >Apa?</a></li>
+                    
+                
+                
+                <li><a href="/categori/" style="color:#fff" >Kategori</a></li>
+                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+            <!-- /.navbar-nav -->
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+</header>
+      <br>
+      <br>
+      <div class="wrapper" style="min-height: 416px;">
+      <div>
+          <div class="content">
+                <div class="col-md-2 pull-right">
+        
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-gw-g+2z-2m-45"
+     data-ad-client="ca-pub-8015856612401610"
+     data-ad-slot="3065660661"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="col-md-2 pull-left">
+</div>
+
+<div class="post col-md-8">
+
+  <header class="post-header container-fluid">
+    <h1 class="content-max-width">Bagaimana melakukan switch multipel versi aplikasi php5 ke php7 pada apache linux?</h1>
+    <span>Sep 4, 2017 </span>   • <a href="/linux/apache/php/2017/09/04/artikel-2/#disqus_thread"> <i class="fa fa-comments-o margin-r-5"></i> 0 Comments</a>
+    <span class="time label label-danger pull-right"> 
+          Linux,
+           
+          Apache,
+           
+          Php,
+           </span>
+  <hr>
+  </header>
+
+  <article class="post-content content container-fluid">
+    <p>Seperti pada artikel sebelumnnya saya membahas <a href="https://developerszone.work/linux/2017/09/04/artikel-1">Bagaimana melakukan switch multipel versi aplikasi pada linux?</a>
+Untuk kali ini saya akan membahas <strong>Bagaimana melakukan switch multipel versi aplikasi php5 ke php7 pada apache linux?</strong></p>
+
+<p>Pada artikel sebelumnya yang berjalan pada terminal kita (# secara gampanya begitu) . Kali ini yang berjalan khusus pada apache sebagai webservice yang digunakan.</p>
+
+<p><img src="http://127.0.0.1:4000/asset/img/img-14.png" alt="alt text" title="view php5" /></p>
+
+<p>Seperti yang terlihat diatas php yang bejalan saat ini pada apche ada php5.
+Untuk merubah dari php5 di rubah menjadi php7 cukup melakukan a2dimod dan a2enmod</p>
+
+<p>Pertama lakukan disabel untuk php5 terlebih dahulu dengan perintah <strong>a2dimod</strong></p>
+
+<div class="highlight"><pre><code class="language-py" data-lang="py"><span class="err">$</span> <span class="n">a2dismod</span> <span class="n">php5</span>
+<span class="n">Module</span> <span class="n">php5</span> <span class="n">disabled</span><span class="o">.</span>
+<span class="n">To</span> <span class="n">activate</span> <span class="n">the</span> <span class="n">new</span> <span class="n">configuration</span><span class="p">,</span> <span class="n">you</span> <span class="n">need</span> <span class="n">to</span> <span class="n">run</span><span class="p">:</span>
+  <span class="n">service</span> <span class="n">apache2</span> <span class="n">restart</span></code></pre></div>
+
+<p>kemudian kita jalankan php7</p>
+
+<div class="highlight"><pre><code class="language-py" data-lang="py"><span class="err">$</span> <span class="n">a2enmod</span> <span class="n">php7</span><span class="o">.</span><span class="mi">0</span>
+<span class="n">Considering</span> <span class="n">dependency</span> <span class="n">mpm_prefork</span> <span class="k">for</span> <span class="n">php7</span><span class="o">.</span><span class="mi">0</span><span class="p">:</span>
+<span class="n">Considering</span> <span class="n">conflict</span> <span class="n">mpm_event</span> <span class="k">for</span> <span class="n">mpm_prefork</span><span class="p">:</span>
+<span class="n">Considering</span> <span class="n">conflict</span> <span class="n">mpm_worker</span> <span class="k">for</span> <span class="n">mpm_prefork</span><span class="p">:</span>
+<span class="n">Module</span> <span class="n">mpm_prefork</span> <span class="n">already</span> <span class="n">enabled</span>
+<span class="n">Considering</span> <span class="n">conflict</span> <span class="n">php5</span> <span class="k">for</span> <span class="n">php7</span><span class="o">.</span><span class="mi">0</span><span class="p">:</span>
+<span class="n">Enabling</span> <span class="n">module</span> <span class="n">php7</span><span class="o">.</span><span class="mf">0.</span>
+<span class="n">To</span> <span class="n">activate</span> <span class="n">the</span> <span class="n">new</span> <span class="n">configuration</span><span class="p">,</span> <span class="n">you</span> <span class="n">need</span> <span class="n">to</span> <span class="n">run</span><span class="p">:</span>
+  <span class="n">service</span> <span class="n">apache2</span> <span class="n">restart</span></code></pre></div>
+
+<p>Setelah dijalankan kita harus melakukan restart pada apache agar mengatifkan versi phpnya.</p>
+
+<div class="highlight"><pre><code class="language-py" data-lang="py"><span class="err">$</span> <span class="n">service</span> <span class="n">apache2</span> <span class="n">restart</span></code></pre></div>
+
+<p>Versi php yang berjalan adalah php7 seperti terlihat dibawah ini:</p>
+
+<p><img src="http://127.0.0.1:4000/asset/img/img-15.png" alt="alt text" title="view php7" /></p>
+
+
+
+  </article>
+		  <div class="row">
+			  <div class=" pull-left">
+				
+				  <a href="/jekyll/disqus/2017/08/30/artikel-1/" class="btn btn-primary btn-flat" title="Bagaimana Memasang Disqus Pada Jekyll?"> <span class="fa fa-angle-double-left"></span></a>
+				
+			  </div>
+			<div class="pull-right">
+			
+			  <a href="/linux/2017/09/05/artikel-1/" class="btn btn-primary btn-flat" title="Bagaimana melakukan switch multipel versi aplikasi pada linux?"><span class="fa fa-angle-double-right"></span> </a>
+			
+			</div>
+		  </div>
+  	
+<div id="disqus_thread"></div>
+<script>
+
+var disqus_config = function () {
+this.page.url =  "https://kurtakon.com/linux/apache/php/2017/09/04/artikel-2/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "/linux/apache/php/2017/09/04/artikel-2"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://kurtakon-com.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+
+
+
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+    <footer class="site-footer bg-black">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading"><foo>&#169;</foo> 2017 Developers Zone Work</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+         
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Quote : <br> Takonlah sebelum takon itu dilarang.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

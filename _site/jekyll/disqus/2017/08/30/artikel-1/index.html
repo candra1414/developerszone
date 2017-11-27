@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>Bagaimana Memasang Disqus Pada Jekyll?</title>
+  <meta name="description" content="Bagi pengguna website static yang tidak memiliki database akan kesulitan membuat komentar. Seperti memasang komentar pada web yang dibuat dengan Jekyll . Sal...">
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <script type="text/javascript" src="/asset/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-1.11.0.js"> </script>
+  <script type="text/javascript" src="/js/costumes.js"> </script>
+    <!-- Bootstrap Core JavaScript -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="/js/bootstrap.min.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+  <script id="dsq-count-scr" src="//kurtakon-com.disqus.com/count.js" async></script>
+  <link rel="canonical" href="https://developerszone.work/jekyll/disqus/2017/08/30/artikel-1/">
+  <link rel="alternate" type="application/atom+xml" title="Developers Zone Work" href="https://developerszone.work/feed.xml" />
+
+</head>
+
+
+  <body>
+    <header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-welcome bg-black" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand"  href="/"><span class="font-bold" style="color:#fff">Developers Zone Work</span></a>
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <!-- /.navbar-header -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="collapse-menu">
+             
+                
+                <li><a href="/about/" style="color:#fff" >Apa?</a></li>
+                    
+                
+                
+                <li><a href="/categori/" style="color:#fff" >Kategori</a></li>
+                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+            <!-- /.navbar-nav -->
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+</header>
+      <br>
+      <br>
+      <div class="wrapper" style="min-height: 416px;">
+      <div>
+          <div class="content">
+                <div class="col-md-2 pull-right">
+        
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-gw-g+2z-2m-45"
+     data-ad-client="ca-pub-8015856612401610"
+     data-ad-slot="3065660661"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="col-md-2 pull-left">
+</div>
+
+<div class="post col-md-8">
+
+  <header class="post-header container-fluid">
+    <h1 class="content-max-width">Bagaimana Memasang Disqus Pada Jekyll?</h1>
+    <span>Aug 30, 2017 </span>   • <a href="/jekyll/disqus/2017/08/30/artikel-1/#disqus_thread"> <i class="fa fa-comments-o margin-r-5"></i> 0 Comments</a>
+    <span class="time label label-danger pull-right"> 
+          Jekyll,
+           
+          Disqus,
+           </span>
+  <hr>
+  </header>
+
+  <article class="post-content content container-fluid">
+    <p>Bagi pengguna website static yang tidak memiliki database akan kesulitan membuat komentar. Seperti memasang komentar pada web yang dibuat dengan <a href="https://kurtakon.com/jekyll/2017/08/08/artikel-1/"><strong>Jekyll</strong> </a>. Salah satu alternatif kita bisa menggunakan disqus. Akan tetapi <strong>Bagaimana Memasang Disqus Pada Jekyll ?</strong>.</p>
+
+<p>Petama, kita harus memiliki akun pada  <a href="https://disqus.com"><strong>disqus</strong> </a>. 
+Kedua, memasangnya pada aplikasi <strong>Jekyll</strong></p>
+
+<ul>
+  <li>Membuat file pada _incudes misal diberinama disqus.html.</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">{ % if page.comments % }
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;disqus_thread&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;script&gt;</span>
+
+    <span class="kd">var</span> <span class="nx">disqus_config</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">page</span><span class="p">.</span><span class="nx">url</span> <span class="o">=</span>  <span class="s2">&quot;https://namaweb.com { { page.url } } &quot;</span><span class="p">;</span>  <span class="c1">// diganti dengan PAGE_URL</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">page</span><span class="p">.</span><span class="nx">identifier</span> <span class="o">=</span> <span class="s2">&quot;{ { page.id } } &quot;</span><span class="p">;</span> <span class="c1">// diganti dengan  PAGE_IDENTIFIER</span>
+    <span class="p">};</span>
+
+    <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="c1">// DON&#39;T EDIT BELOW THIS LINE</span>
+    <span class="kd">var</span> <span class="nx">d</span> <span class="o">=</span> <span class="nb">document</span><span class="p">,</span> <span class="nx">s</span> <span class="o">=</span> <span class="nx">d</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">);</span>
+    <span class="nx">s</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s1">&#39;https://nama-aplikasi-disqus.disqus.com/embed.js&#39;</span><span class="p">;</span> <span class="o">&lt;---</span> <span class="nx">dari</span> <span class="nx">Disqus</span>
+    <span class="nx">s</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;data-timestamp&#39;</span><span class="p">,</span> <span class="o">+</span><span class="k">new</span> <span class="nb">Date</span><span class="p">());</span>
+    <span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">head</span> <span class="o">||</span> <span class="nx">d</span><span class="p">.</span><span class="nx">body</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+    <span class="p">})();</span>
+    <span class="nt">&lt;/script&gt;</span>
+    <span class="nt">&lt;noscript&gt;</span>Please enable JavaScript to view the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;https://disqus.com/?ref_noscript&quot;</span><span class="nt">&gt;</span>comments powered by Disqus.<span class="nt">&lt;/a&gt;&lt;/noscript&gt;</span>
+                                
+    { % endif % }</code></pre></div>
+
+<ul>
+  <li>Masukan inculde file <strong>disqus.html</strong> pada  post.html pada folder _layouts.</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">{ % include disqus.html % }</code></pre></div>
+
+<ul>
+  <li>Masukan <strong>comments: true</strong> pada header artikel.</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">layout: post
+title:  &quot;Bagaimana Memasang Disqus Pada Jekyll?&quot;
+comments: true
+date:   2017-08-30 14:06:58
+categories: [Jekyll,Disqus]</code></pre></div>
+
+<p>Jika berhasil maka akan muncul seperti gambar dibawah ini.</p>
+
+<p><img src="http://127.0.0.1:4000/asset/img/img-13.png" alt="alt text" title="view disqus" /></p>
+
+<p>Jika kita ingin mengetahui jumlah komentar untuk halaman yang dibuka. 
+- tambahkan file dibawah ini pada header.html untuk memanggil javascript dari disqus.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">id=</span><span class="s">&quot;dsq-count-scr&quot;</span> <span class="na">src=</span><span class="s">&quot;//SHORTNAME.disqus.com/count.js&quot;</span> <span class="na">async</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></div>
+
+<ul>
+  <li>silahkan masukan script dibawah ini pada _layouts/post.html untuk menampilkan jumlahnya.</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">{</span> <span class="o">%</span> <span class="k">if</span> <span class="n">page</span><span class="o">.</span><span class="n">comments</span> <span class="o">%</span> <span class="p">}</span> 
+     <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;https://namaweb.com { { post.url } } #disqus_thread&quot;</span><span class="o">&gt;</span><span class="mi">0</span> <span class="no">Comments</span> <span class="o">&lt;</span><span class="sr">/a&gt;</span>
+<span class="sr">{ % endif % }</span></code></pre></div>
+
+
+
+  </article>
+		  <div class="row">
+			  <div class=" pull-left">
+				
+				  <a href="/yii/2017/08/28/artikel-1/" class="btn btn-primary btn-flat" title="Bagaimana Membuat Migrasi Tabel Database Pada Yii2?"> <span class="fa fa-angle-double-left"></span></a>
+				
+			  </div>
+			<div class="pull-right">
+			
+			  <a href="/linux/apache/php/2017/09/04/artikel-2/" class="btn btn-primary btn-flat" title="Bagaimana melakukan switch multipel versi aplikasi php5 ke php7 pada apache linux?"><span class="fa fa-angle-double-right"></span> </a>
+			
+			</div>
+		  </div>
+  	
+<div id="disqus_thread"></div>
+<script>
+
+var disqus_config = function () {
+this.page.url =  "https://kurtakon.com/jekyll/disqus/2017/08/30/artikel-1/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "/jekyll/disqus/2017/08/30/artikel-1"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://kurtakon-com.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+
+
+
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+    <footer class="site-footer bg-black">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading"><foo>&#169;</foo> 2017 Developers Zone Work</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+         
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Quote : <br> Takonlah sebelum takon itu dilarang.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
