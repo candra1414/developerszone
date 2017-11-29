@@ -6,8 +6,8 @@
 </description>
     <link>https://developerszone.work/</link>
     <atom:link href="https://developerszone.work/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Nov 2017 12:11:09 +0700</pubDate>
-    <lastBuildDate>Wed, 29 Nov 2017 12:11:09 +0700</lastBuildDate>
+    <pubDate>Wed, 29 Nov 2017 17:00:38 +0700</pubDate>
+    <lastBuildDate>Wed, 29 Nov 2017 17:00:38 +0700</lastBuildDate>
     <generator>Jekyll v2.5.0</generator>
     
       <item>
@@ -113,7 +113,7 @@ Would you like to create one now? (yes/no):
     
       <item>
         <title>How to install Django in Linux ?</title>
-        <description>&lt;p&gt;What do you think about Python? It’s not snake. But, a programming languages . Python &lt;em&gt;is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991&lt;/em&gt; (menurut Wikipedia).&lt;/p&gt;
+        <description>&lt;p&gt;What do you think about Python? It’s not snake. But, a programming languages . Python &lt;em&gt;is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;What is the relationship between Python with &lt;strong&gt;Django&lt;/strong&gt; ?&lt;/p&gt;
 
@@ -177,21 +177,19 @@ Quit the server with CONTROL-C.
       </item>
     
       <item>
-        <title>Bagaimana uninstall aplikasi pada linux dengan terminal ?</title>
-        <description>&lt;p&gt;Sering kita main install aplikasi laptop kita. Padahal tidak penting sama sekali di sentuh juga tidak. Aplikasi tersebut tanpa sadari mengurangi kapasitas hardisk kita. Yang jadi masalah bagaimana cara unistall aplikasi tersebut pada linux ? &lt;em&gt;*karena saya pengguna linux&lt;/em&gt; hehe… heheh…&lt;/p&gt;
+        <title>How to uninstall applications on linux with terminal?</title>
+        <description>&lt;p&gt;we often hear how to install apps on linux and then how to uninstall the application in linux with terminal.&lt;/p&gt;
 
-&lt;p&gt;Pada artikel kali ini saya akan menulis cara uninstall aplikasi pada linux mengunakan terminal.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;How to show list aplications :&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;cari pada list nama aplikasinya :&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Untuk melihat aplikasi yang telah kita install bisa menggunakan &lt;strong&gt;dpkg&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You can do with &lt;strong&gt;dpkg&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ dpkg --list
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;setelah muncul :&lt;/p&gt;
+&lt;p&gt;Will show list like this :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;ii  gir1.2-vte-2.90                      1:0.34.9-1ubuntu2       amd64                   GObject introspection data for the VTE library
 ii  gir1.2-webkit-3.0                    2.4.10-0ubuntu0.14.04.1 amd64                   Web content engine library for GTK+ - GObject introspection data
@@ -203,18 +201,18 @@ ii  gitk                                 1:1.9.1-1ubuntu0.7      all            
 ii  gitkraken                            3.2.2                   amd64                   Unleash your repo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;setelah muncul, pilih apalikasi yang akan di &lt;em&gt;uninstall&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You will select aplication to be &lt;em&gt;uninstall&lt;/em&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Unistall aplikasinya :&lt;/li&gt;
-&lt;/ol&gt;
+&lt;ul&gt;
+  &lt;li&gt;Unistall aplication :&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Misal saya mau &lt;em&gt;uninstall&lt;/em&gt;  apliaksi &lt;strong&gt;gitkraken&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For example, you will &lt;em&gt;uninstall&lt;/em&gt;  &lt;strong&gt;gitkraken&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ apt-get --purge remove gitkraken
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;setelah itu akan mendapatkan perintah konfirmasi , intinya yakin mau di unistall&lt;/p&gt;
+&lt;p&gt;You will get notification or warning about unistall of aplication&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Reading package lists... Done
 Building dependency tree       
@@ -229,9 +227,9 @@ After this operation, 248 MB disk space will be freed.
 Do you want to continue? [Y/n] 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Jika iya tulis &lt;strong&gt;y&lt;/strong&gt; jika tidak jadi tinggal tulis &lt;strong&gt;n&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If your sure you can write &lt;strong&gt;y&lt;/strong&gt; if isn’t you can write  &lt;strong&gt;n&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Ini jika tulis &lt;strong&gt;y&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Like this if you write  &lt;strong&gt;y&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;(Reading database ... 1350641 files and directories currently installed.)
 Removing gitkraken (3.2.2) ...
@@ -242,7 +240,7 @@ Rebuilding /usr/share/applications/bamf-2.index...
 Processing triggers for mime-support (3.54ubuntu1.1) ...
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Oke aplikasi berhasil dihapus.. bye..bye…&lt;/p&gt;
+&lt;p&gt;-done-&lt;/p&gt;
 </description>
         <pubDate>Thu, 23 Nov 2017 15:06:58 +0700</pubDate>
         <link>https://developerszone.work/linux/2017/11/23/artikel-2/</link>

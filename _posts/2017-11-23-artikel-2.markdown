@@ -1,23 +1,19 @@
 ---
 layout: post
-title:  "Bagaimana uninstall aplikasi pada linux dengan terminal ?"
+title:  "How to uninstall applications on linux with terminal?"
 comments: true
 date:   2017-11-23 08:06:58
 categories: [Linux]
 ---
+we often hear how to install apps on linux and then how to uninstall the application in linux with terminal.
 
-Sering kita main install aplikasi laptop kita. Padahal tidak penting sama sekali di sentuh juga tidak. Aplikasi tersebut tanpa sadari mengurangi kapasitas hardisk kita. Yang jadi masalah bagaimana cara unistall aplikasi tersebut pada linux ? _*karena saya pengguna linux_ hehe... heheh...
+- How to show list aplications :
 
-
-Pada artikel kali ini saya akan menulis cara uninstall aplikasi pada linux mengunakan terminal. 
-
-1. cari pada list nama aplikasinya :
-
-Untuk melihat aplikasi yang telah kita install bisa menggunakan __dpkg__
+You can do with __dpkg__
 
     $ dpkg --list
 
-setelah muncul :
+Will show list like this :
 
     ii  gir1.2-vte-2.90                      1:0.34.9-1ubuntu2       amd64                   GObject introspection data for the VTE library
     ii  gir1.2-webkit-3.0                    2.4.10-0ubuntu0.14.04.1 amd64                   Web content engine library for GTK+ - GObject introspection data
@@ -29,16 +25,16 @@ setelah muncul :
     ii  gitkraken                            3.2.2                   amd64                   Unleash your repo
 
 
-setelah muncul, pilih apalikasi yang akan di _uninstall_ 
+You will select aplication to be _uninstall_ 
 
 
-2. Unistall aplikasinya :
+- Unistall aplication :
 
-Misal saya mau _uninstall_  apliaksi __gitkraken__
+For example, you will _uninstall_  __gitkraken__
 
     $ apt-get --purge remove gitkraken
 
-setelah itu akan mendapatkan perintah konfirmasi , intinya yakin mau di unistall 
+You will get notification or warning about unistall of aplication 
 
     Reading package lists... Done
     Building dependency tree       
@@ -53,9 +49,9 @@ setelah itu akan mendapatkan perintah konfirmasi , intinya yakin mau di unistall
     Do you want to continue? [Y/n] 
 
 
-Jika iya tulis __y__ jika tidak jadi tinggal tulis __n__
+If your sure you can write __y__ if isn't you can write  __n__
 
-Ini jika tulis __y__
+Like this if you write  __y__
 
     (Reading database ... 1350641 files and directories currently installed.)
     Removing gitkraken (3.2.2) ...
@@ -66,4 +62,4 @@ Ini jika tulis __y__
     Processing triggers for mime-support (3.54ubuntu1.1) ...
 
 
-Oke aplikasi berhasil dihapus.. bye..bye... 
+-done-
