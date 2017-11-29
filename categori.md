@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /categori/
-title: Kategori
+title: Category
 ---
 
 <div class="row">

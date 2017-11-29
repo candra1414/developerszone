@@ -1,29 +1,29 @@
 ---
 layout: post
-title:  "Bagaimana koneksi database Mysql pada Django ?"
+title:  "How to connect Mysql database in Django?"
 comments: true
 date:   2017-11-23 08:06:58
 categories: [Linux,Python,Django,Mysql]
 ---
 
-Pada artikel sebelumnya membahas [Bagaimana cara install Django pada linux?]({{site.url}}/linux/python/2017/11/23/artikel-3/) untuk kali ini mengatur koneksi databasenya. Karena gak keren kalau gak ada input data donk. Nanti jadi website statik bukan dinamis. Yups untuk kali ini koneksi databasenya menggunakan yang bisa __Mysql__ ( ini biasa buat saya belum tentu anda ya hehehe).
+In the last article, we discuss about [How to install Django in linux?]({{site.url}}/linux/python/2017/11/23/artikel-3/) .Next, How to connect to database (Mysql).
 
-Cara koneksi databasenya :
+How to connect the database :
 
-- install konektor antara mysql dan python dulu 
+- install connector between mysql and python 
 
-Cara installnya biasa __apt-get__ (_ini dengen syarat Mysql sudah terinstall loh)
+We can get with __apt-get__ (Mysql is already installed)
     
     # apt-get install python3-mysql.connector
 
-kalau belum install _mysql-server_atau biar sekalian atau lupa dan biar gak ragu
+if not already,You can install  _mysql-server_
 
     # apt-get install mysql-server python3-mysql.connector
 
-- membuat database di Mysql misal namanya __mysite__ (bisa sama dengan nama aplikasinya)
-- merubah file pada __mysite/mysite/settings.py__
+- Create database in Mysql for example  __mysite__ ( can be same with aplication)
+- Edit file on __mysite/mysite/settings.py__
 
-Perubahan terjadi 
+Before :
 
     DATABASES = {
        'default': {
@@ -32,7 +32,7 @@ Perubahan terjadi
        }
     }
 
-Menjadi :
+After :
 
     DATABASES = {
         'default': {
@@ -46,20 +46,20 @@ Menjadi :
     }
 
 
-Setelah terkoneksi kalian bisa melakukan migrasi databasenya :
+Database migration :
 
     $ python manage.py migrate
 
-Kalau tidak bisa dan  muncul error
+If you see an error like this :
     
     Unknown command: 'migrate'
     Type 'manage.py help' for usage.
 
-Maka coba dengan sitak dibawah ini
+You can try like this :
 
     $ python manage.py syncdb
 
-maka akan muncul :
+If it works, it will look like this :
 
     Creating tables ...
     Creating table django_admin_log
@@ -75,6 +75,6 @@ maka akan muncul :
     You just installed Django's auth system, which means you don't have any superusers defined.
     Would you like to create one now? (yes/no):
 
-Jika sudah yakin tinggal tulis __yes__ , kemudian ikuti perintahnya untuk memasukan email, user dan password.
+You can write __yes__ , and follow the next step.
 
-Selesai... Database berhasil terkoneksi serta termigrasi ke Mysql.
+-Done-

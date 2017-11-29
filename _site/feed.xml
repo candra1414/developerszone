@@ -6,36 +6,36 @@
 </description>
     <link>https://developerszone.work/</link>
     <atom:link href="https://developerszone.work/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Nov 2017 09:30:57 +0700</pubDate>
-    <lastBuildDate>Wed, 29 Nov 2017 09:30:57 +0700</lastBuildDate>
+    <pubDate>Wed, 29 Nov 2017 11:25:18 +0700</pubDate>
+    <lastBuildDate>Wed, 29 Nov 2017 11:25:18 +0700</lastBuildDate>
     <generator>Jekyll v2.5.0</generator>
     
       <item>
-        <title>Bagaimana koneksi database Mysql pada Django ?</title>
-        <description>&lt;p&gt;Pada artikel sebelumnya membahas &lt;a href=&quot;https://developerszone.work/linux/python/2017/11/23/artikel-3/&quot;&gt;Bagaimana cara install Django pada linux?&lt;/a&gt; untuk kali ini mengatur koneksi databasenya. Karena gak keren kalau gak ada input data donk. Nanti jadi website statik bukan dinamis. Yups untuk kali ini koneksi databasenya menggunakan yang bisa &lt;strong&gt;Mysql&lt;/strong&gt; ( ini biasa buat saya belum tentu anda ya hehehe).&lt;/p&gt;
+        <title>How to connect Mysql database in Django?</title>
+        <description>&lt;p&gt;In the last article, we discuss about &lt;a href=&quot;https://developerszone.work/linux/python/2017/11/23/artikel-3/&quot;&gt;How to install Django in linux?&lt;/a&gt; .Next, How to connect to database (Mysql).&lt;/p&gt;
 
-&lt;p&gt;Cara koneksi databasenya :&lt;/p&gt;
+&lt;p&gt;How to connect the database :&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;install konektor antara mysql dan python dulu&lt;/li&gt;
+  &lt;li&gt;install connector between mysql and python&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Cara installnya biasa &lt;strong&gt;apt-get&lt;/strong&gt; (_ini dengen syarat Mysql sudah terinstall loh)&lt;/p&gt;
+&lt;p&gt;We can get with &lt;strong&gt;apt-get&lt;/strong&gt; (Mysql is already installed)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# apt-get install python3-mysql.connector
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;kalau belum install _mysql-server_atau biar sekalian atau lupa dan biar gak ragu&lt;/p&gt;
+&lt;p&gt;if not already,You can install  &lt;em&gt;mysql-server&lt;/em&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# apt-get install mysql-server python3-mysql.connector
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;membuat database di Mysql misal namanya &lt;strong&gt;mysite&lt;/strong&gt; (bisa sama dengan nama aplikasinya)&lt;/li&gt;
-  &lt;li&gt;merubah file pada &lt;strong&gt;mysite/mysite/settings.py&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Create database in Mysql for example  &lt;strong&gt;mysite&lt;/strong&gt; ( can be same with aplication)&lt;/li&gt;
+  &lt;li&gt;Edit file on &lt;strong&gt;mysite/mysite/settings.py&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Perubahan terjadi&lt;/p&gt;
+&lt;p&gt;Before :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;DATABASES = {
    &#39;default&#39;: {
@@ -45,7 +45,7 @@
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Menjadi :&lt;/p&gt;
+&lt;p&gt;After :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;DATABASES = {
     &#39;default&#39;: {
@@ -59,23 +59,23 @@
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Setelah terkoneksi kalian bisa melakukan migrasi databasenya :&lt;/p&gt;
+&lt;p&gt;Database migration :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ python manage.py migrate
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Kalau tidak bisa dan  muncul error&lt;/p&gt;
+&lt;p&gt;If you see an error like this :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Unknown command: &#39;migrate&#39;
 Type &#39;manage.py help&#39; for usage.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Maka coba dengan sitak dibawah ini&lt;/p&gt;
+&lt;p&gt;You can try like this :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ python manage.py syncdb
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;maka akan muncul :&lt;/p&gt;
+&lt;p&gt;If it works, it will look like this :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Creating tables ...
 Creating table django_admin_log
@@ -92,9 +92,9 @@ You just installed Django&#39;s auth system, which means you don&#39;t have any 
 Would you like to create one now? (yes/no):
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Jika sudah yakin tinggal tulis &lt;strong&gt;yes&lt;/strong&gt; , kemudian ikuti perintahnya untuk memasukan email, user dan password.&lt;/p&gt;
+&lt;p&gt;You can write &lt;strong&gt;yes&lt;/strong&gt; , and follow the next step.&lt;/p&gt;
 
-&lt;p&gt;Selesai… Database berhasil terkoneksi serta termigrasi ke Mysql.&lt;/p&gt;
+&lt;p&gt;-Done-&lt;/p&gt;
 </description>
         <pubDate>Thu, 23 Nov 2017 15:06:58 +0700</pubDate>
         <link>https://developerszone.work/linux/python/django/mysql/2017/11/23/artikel-4/</link>

@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <title>Bagaimana koneksi database Mysql pada Django ?</title>
-  <meta name="description" content="Pada artikel sebelumnya membahas Bagaimana cara install Django pada linux? untuk kali ini mengatur koneksi databasenya. Karena gak keren kalau gak ada input ...">
+  <title>How to connect Mysql database in Django?</title>
+  <meta name="description" content="In the last article, we discuss about How to install Django in linux? .Next, How to connect to database (Mysql).">
 	
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -47,7 +47,7 @@
                     
                 
                 
-                <li><a href="/categori/" style="color:#fff" >Kategori</a></li>
+                <li><a href="/categori/" style="color:#fff" >Category</a></li>
                     
                 
                 
@@ -105,7 +105,7 @@
 <div class="post col-md-8">
 
   <header class="post-header container-fluid">
-    <h1 class="content-max-width">Bagaimana koneksi database Mysql pada Django ?</h1>
+    <h1 class="content-max-width">How to connect Mysql database in Django?</h1>
     <span>Nov 23, 2017 </span>   • <a href="/linux/python/django/mysql/2017/11/23/artikel-4/#disqus_thread"> <i class="fa fa-comments-o margin-r-5"></i> 0 Comments</a>
     <span class="time label label-danger pull-right"> 
           Linux,
@@ -120,30 +120,30 @@
   </header>
 
   <article class="post-content content container-fluid">
-    <p>Pada artikel sebelumnya membahas <a href="https://developerszone.work/linux/python/2017/11/23/artikel-3/">Bagaimana cara install Django pada linux?</a> untuk kali ini mengatur koneksi databasenya. Karena gak keren kalau gak ada input data donk. Nanti jadi website statik bukan dinamis. Yups untuk kali ini koneksi databasenya menggunakan yang bisa <strong>Mysql</strong> ( ini biasa buat saya belum tentu anda ya hehehe).</p>
+    <p>In the last article, we discuss about <a href="https://developerszone.work/linux/python/2017/11/23/artikel-3/">How to install Django in linux?</a> .Next, How to connect to database (Mysql).</p>
 
-<p>Cara koneksi databasenya :</p>
+<p>How to connect the database :</p>
 
 <ul>
-  <li>install konektor antara mysql dan python dulu</li>
+  <li>install connector between mysql and python</li>
 </ul>
 
-<p>Cara installnya biasa <strong>apt-get</strong> (_ini dengen syarat Mysql sudah terinstall loh)</p>
+<p>We can get with <strong>apt-get</strong> (Mysql is already installed)</p>
 
 <pre><code># apt-get install python3-mysql.connector
 </code></pre>
 
-<p>kalau belum install _mysql-server_atau biar sekalian atau lupa dan biar gak ragu</p>
+<p>if not already,You can install  <em>mysql-server</em></p>
 
 <pre><code># apt-get install mysql-server python3-mysql.connector
 </code></pre>
 
 <ul>
-  <li>membuat database di Mysql misal namanya <strong>mysite</strong> (bisa sama dengan nama aplikasinya)</li>
-  <li>merubah file pada <strong>mysite/mysite/settings.py</strong></li>
+  <li>Create database in Mysql for example  <strong>mysite</strong> ( can be same with aplication)</li>
+  <li>Edit file on <strong>mysite/mysite/settings.py</strong></li>
 </ul>
 
-<p>Perubahan terjadi</p>
+<p>Before :</p>
 
 <pre><code>DATABASES = {
    'default': {
@@ -153,7 +153,7 @@
 }
 </code></pre>
 
-<p>Menjadi :</p>
+<p>After :</p>
 
 <pre><code>DATABASES = {
     'default': {
@@ -167,23 +167,23 @@
 }
 </code></pre>
 
-<p>Setelah terkoneksi kalian bisa melakukan migrasi databasenya :</p>
+<p>Database migration :</p>
 
 <pre><code>$ python manage.py migrate
 </code></pre>
 
-<p>Kalau tidak bisa dan  muncul error</p>
+<p>If you see an error like this :</p>
 
 <pre><code>Unknown command: 'migrate'
 Type 'manage.py help' for usage.
 </code></pre>
 
-<p>Maka coba dengan sitak dibawah ini</p>
+<p>You can try like this :</p>
 
 <pre><code>$ python manage.py syncdb
 </code></pre>
 
-<p>maka akan muncul :</p>
+<p>If it works, it will look like this :</p>
 
 <pre><code>Creating tables ...
 Creating table django_admin_log
@@ -200,9 +200,9 @@ You just installed Django's auth system, which means you don't have any superuse
 Would you like to create one now? (yes/no):
 </code></pre>
 
-<p>Jika sudah yakin tinggal tulis <strong>yes</strong> , kemudian ikuti perintahnya untuk memasukan email, user dan password.</p>
+<p>You can write <strong>yes</strong> , and follow the next step.</p>
 
-<p>Selesai… Database berhasil terkoneksi serta termigrasi ke Mysql.</p>
+<p>-Done-</p>
 
 
   </article>

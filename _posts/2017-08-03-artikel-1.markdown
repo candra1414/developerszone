@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bagaimana mengatasi  Error:  Address already in use - bind(2) pada Jekyll ?"
+title:  "How to solve Error:  Address already in use - bind(2) from Jekyll ?"
 comments: true
 date:   2017-08-03 23:06:58
 categories: [Jekyll]
