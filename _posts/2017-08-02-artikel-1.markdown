@@ -1,22 +1,24 @@
 ---
 layout: post
 comments: true
-title:  "Apa itu Markdown ?"
+title:  "What is Markdown ?"
 date:   2017-08-02 14:06:58
 categories: [Markdown]
 ---
 
-__Markdown__  adalah tools yang digunakan untuk mengkonversi text menjadi __html__ dengan berbagai format pada konten web .
+__Markdown__  is a lightweight markup language with plain text formatting syntax. It is designed so that it can be converted to HTML and many other formats using a tool by the same name (wikipedia).
 
 
 
-Markdown dibuat dengan ekstensi __.md__ atau __.markdown__ , sehingga jika ingin membuat file markdown harus disimpan dengan contoh : _contoh.md_ atau _contoh.markdown_  .
+Markdown ceate file with filename extensions __.md__ or __.markdown__ , so if you want to create a markdown file should be saved with an example:
+
+ _contoh.md_ or _contoh.markdown_  .
 <br>
 <br>
 
-###Bagaimana contoh penulisan pada Markdown ?
+###How to write on Markdown ?
 
-Berikut ini contoh penulisan standar code pada markdown :
+example:
 <table class="table table-border">
 <tr>
 <th style="width:300px">Markdown</th>
@@ -114,53 +116,53 @@ aliqua.</p></xmp>
 </tr>
 <tr>
 <td>
-Membuat list angka :<br>
-1. satu <br>
-2. dua <br>
-3. tiga <br>
+List of number:<br>
+1. one <br>
+2. two <br>
+3. three <br>
 </td>
 <td>
 <xmp><ol>
-<li>satu</li>
-<li>dua</li>
-<li>tiga</li>
+<li>one</li>
+<li>two</li>
+<li>three</li>
 </ol>
 </xmp>
 </td>
 <td>
 <br>
 <ol>
-<li>satu</li>
-<li>dua</li>
-<li>tiga</li>
+<li>one</li>
+<li>two</li>
+<li>three</li>
 </ol>
 </td>
 </tr>
 <tr>
 <td>
-Membuat list bullet :<br>
-* satu <br>
-* dua <br>
-* tiga <br>
+List of bullet numbering :<br>
+* one <br>
+* two <br>
+* three <br>
 </td>
 <td>
 <xmp><ul>
-<li>satu</li>
-<li>dua</li>
-<li>tiga</li>
+<li>one</li>
+<li>two</li>
+<li>three</li>
 </ul>
 </xmp>
 </td>
 <td>
 <br>
 <ul>
-<li>satu</li>
-<li>dua</li>
-<li>tiga</li>
+<li>one</li>
+<li>two</li>
+<li>three</li>
 </ul>
 </td>
 </tr>
 </table>
 
 
-_Sumber:  <a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia</a>_
+source :  <a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia</a>

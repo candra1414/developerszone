@@ -303,12 +303,12 @@
 
     {
     
-      "title"    : "Apa itu Markdown ?",
+      "title"    : "What is Markdown ?",
       "url"      : "/markdown/2017/08/02/artikel-1/",
       "category" : "markdown",
       "tags"     : "",
       "date"     : "Aug 2, 2017",
-      "content": "Markdown  adalah tools yang digunakan untuk mengkonversi text menjadi html dengan berbagai format pada konten web ."
+      "content": "Markdown  is a lightweight markup language with plain text formatting syntax. It is designed so that it can be converted to HTML and many other formats using a tool by the same name (wikipedia)."
 
     } 
   

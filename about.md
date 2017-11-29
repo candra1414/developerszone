@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Apa?
+title: About?
 permalink: /about/
 ---
 
-Merupakan mirror dari website https://kurtakon.com/
+Mirror from https://kurtakon.com
