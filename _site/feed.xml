@@ -6,8 +6,8 @@
 </description>
     <link>https://developerszone.work/</link>
     <atom:link href="https://developerszone.work/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Nov 2017 11:25:18 +0700</pubDate>
-    <lastBuildDate>Wed, 29 Nov 2017 11:25:18 +0700</lastBuildDate>
+    <pubDate>Wed, 29 Nov 2017 12:11:09 +0700</pubDate>
+    <lastBuildDate>Wed, 29 Nov 2017 12:11:09 +0700</lastBuildDate>
     <generator>Jekyll v2.5.0</generator>
     
       <item>
@@ -112,44 +112,44 @@ Would you like to create one now? (yes/no):
       </item>
     
       <item>
-        <title>Bagaimana cata install Django pada Linux ?</title>
-        <description>&lt;p&gt;Selamat malam dan dimana mata butuh kopi. Apa yang pertama kali anda pikirkan ketika dengar kata Python? Pasti orang awan akan bilang ular Python .Akan tetapi kali ini saya tidak akan membahas ular (asli ular) namun bahasa pemerogaman Python. Python &lt;em&gt;is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991&lt;/em&gt; (menurut Wikipedia).&lt;/p&gt;
+        <title>How to install Django in Linux ?</title>
+        <description>&lt;p&gt;What do you think about Python? It’s not snake. But, a programming languages . Python &lt;em&gt;is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991&lt;/em&gt; (menurut Wikipedia).&lt;/p&gt;
 
-&lt;p&gt;Pada judul artikel &lt;strong&gt;Bagaimana cara install Django pada Linux ?&lt;/strong&gt;  kenapa bahas Python apa hubungannya?&lt;/p&gt;
+&lt;p&gt;What is the relationship between Python with &lt;strong&gt;Django&lt;/strong&gt; ?&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Django&lt;/strong&gt; adalah salah satu dari web framework open source berbasis Python yang didesain untuk membuat aplikasi web yang dinamis yang telah memiliki banyak fitur dan aman.&lt;/p&gt;
+&lt;p&gt;Do you know, &lt;strong&gt;Django&lt;/strong&gt; is a open source Python web frameworks designed to create dynamic, multi-feature, and secure web applications.&lt;/p&gt;
 
-&lt;p&gt;Bagaimana cara install ?&lt;/p&gt;
+&lt;p&gt;How to Install ?&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;harus install Python&lt;/li&gt;
+  &lt;li&gt;install Python&lt;/li&gt;
   &lt;li&gt;install framework Django&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Cara install sama sepertai aplikasi lain di linux menggunakan &lt;strong&gt;apt-get&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;How to install,it same with other aplictions in linux &lt;strong&gt;apt-get&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ apt-get install python-django
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Buat aplikasi&lt;/li&gt;
+  &lt;li&gt;Create aplication&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Cara membuat aplikasi buka terminal misal nama aplikasi nya &lt;em&gt;mysite&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Create aplication  with terminal (open your terminal), for example with name aplication  &lt;em&gt;mysite&lt;/em&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ django-admin startproject mysite
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Jalankan Aplikasinya&lt;/li&gt;
+  &lt;li&gt;Run aplication&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Cara menjalnkan masih menggunakan terminal, masuk ke direktori aplikasinya (menggunakan &lt;strong&gt;cd&lt;/strong&gt; ) kemudian jalankan sintak dibawah ini :&lt;/p&gt;
+&lt;p&gt;How to run still using the terminal, go to the application directory with &lt;strong&gt;cd&lt;/strong&gt; )  and run aplication with :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ python manage.py runserver
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Kemudian akan muncul :&lt;/p&gt;
+&lt;p&gt;After that :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Validating models...
 0 errors found
@@ -160,9 +160,7 @@ Quit the server with CONTROL-C.
 [23/Nov/2017 15:29:30] &quot;GET / HTTP/1.1&quot; 200 1757
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;dari data diatas diketahui aplikasi berjalan pada port 8000. Untuk mengetahui buka web browser dan masukan link &lt;a href=&quot;http://127.0.0.1:8000/&quot;&gt;http://127.0.0.1:8000/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Hasilnya…&lt;/p&gt;
+&lt;p&gt;Open web browser and open link this &lt;a href=&quot;http://127.0.0.1:8000/&quot;&gt;http://127.0.0.1:8000/&lt;/a&gt; . Do you know, this aplications run in port 8000.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://developerszone.work/asset/img/img-23nov2017-1.png&quot; alt=&quot;alt text&quot; title=&quot;hello word&quot; /&gt;&lt;/p&gt;
 
