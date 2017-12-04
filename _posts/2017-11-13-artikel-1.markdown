@@ -1,27 +1,25 @@
 ---
 layout: post
-title:  "Bagaimana merubah versi php pada nginx linux FastCGI?"
+title:  "How to change php version on FastCGI (nginx linux)?"
 comments: true
 date:   2017-11-13 08:06:58
 categories: [Linux,Nginx,Php]
 ---
+In the last article, we discuss about [How to change php5 application version to php7 on apache linux?]({{site.url}}/linux/apache/php/2017/09/04/artikel-2/) .  And then now, we will discuss about how to change php version in linux, but not with Apache again. It's about the nginx server. That is, on the FastCGI version.
+Before that,We must install php version on fpm formater.
 
-Pada artikel sebelumnnya saya membahas [Bagaimana melakukan switch multipel versi aplikasi php5 ke php7 pada apache linux??]({{site.url}}/linux/apache/php/2017/09/04/artikel-2/) Untuk kali ini saya akan membahas bagaimana jika merubah versi php untuk web server nginx pada linux?
-
-Sebelumnya untuk install versi php yang diinginkan,misal php5 dan php7
-
--> untuk php5
+->  php5 version
 
         $ apt-get install php5-fpm 
 
--> untuk php7.0
+-> php7.0 version
 
         $ apt-get install php7-fpm 
 
 
-Bagaimana merubah settinganya?
+What is the setting?
 
-Buka file /etc/nginx/sites-available/default:
+open the file in the directory /etc/nginx/sites-available/default:
 
     server {
         listen   80;
@@ -46,7 +44,7 @@ Buka file /etc/nginx/sites-available/default:
 [gambar2]:{{site.urlimg}}img-13nov2017-2.png "view php5"
 
 
-Pada __location__ terdapat __fastcgi_pass unix:__  yang mengacu pada versi _php_ yang berjalan. Terlihat __/var/run/php5-fpm.sock__ versi php5 yang saat ini berjalan. Untuk merubahnya, kita harus mencari versi pada folder __/var/run/__   __php7-fpm.sock__ berada di folder mana pada di install (pada kasus saya file tersebut terdapat didalam folder php).
+On the line  _location_ there is  __fastcgi_pass unix:__  which refers to the running _php_ version. In __/var/run/php5-fpm.sock__ , there is the current php5 version is running. To change it, we have to find on directory __/var/run/__   __php7-fpm.sock__ (in my case the file is in the php folder but sometimes it can be found on somewhere else).
 
     server {
         listen   80;
@@ -65,10 +63,12 @@ Pada __location__ terdapat __fastcgi_pass unix:__  yang mengacu pada versi _php_
         }
     }
 
-Setelah serlesai restart nginx
+After that, You must restart nginx
 
         $ sudo service nginx restart
 
 ![alt text][gambar]
 
 [gambar]:{{site.urlimg}}img-13nov2017-1.png "view php7"
+
+-done-

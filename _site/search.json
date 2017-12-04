@@ -51,12 +51,12 @@
 
     {
     
-      "title"    : "Bagaimana merubah versi php pada nginx linux FastCGI?",
+      "title"    : "How to change php version on FastCGI (nginx linux)?",
       "url"      : "/linux/nginx/php/2017/11/13/artikel-1/",
       "category" : "linux, nginx, php",
       "tags"     : "",
       "date"     : "Nov 13, 2017",
-      "content": "Pada artikel sebelumnnya saya membahas Bagaimana melakukan switch multipel versi aplikasi php5 ke php7 pada apache linux?? Untuk kali ini saya akan membahas bagaimana jika merubah versi php untuk web server nginx pada linux?"
+      "content": "In the last article, we discuss about How to change php5 application version to php7 on apache linux? .  And then now, we will discuss about how to change php version in linux, but not with Apache again. It’s about the nginx server. That is, on the FastCGI version.Before that,We must install php version on fpm formater."
 
     } ,
   

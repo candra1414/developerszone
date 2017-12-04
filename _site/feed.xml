@@ -6,8 +6,8 @@
 </description>
     <link>https://developerszone.work/</link>
     <atom:link href="https://developerszone.work/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 04 Dec 2017 18:28:38 +0700</pubDate>
-    <lastBuildDate>Mon, 04 Dec 2017 18:28:38 +0700</lastBuildDate>
+    <pubDate>Tue, 05 Dec 2017 05:09:55 +0700</pubDate>
+    <lastBuildDate>Tue, 05 Dec 2017 05:09:55 +0700</lastBuildDate>
     <generator>Jekyll v2.5.0</generator>
     
       <item>
@@ -275,24 +275,23 @@ You can do it with &lt;strong&gt;dpkg&lt;/strong&gt; like this :&lt;/p&gt;
       </item>
     
       <item>
-        <title>Bagaimana merubah versi php pada nginx linux FastCGI?</title>
-        <description>&lt;p&gt;Pada artikel sebelumnnya saya membahas &lt;a href=&quot;https://developerszone.work/linux/apache/php/2017/09/04/artikel-2/&quot;&gt;Bagaimana melakukan switch multipel versi aplikasi php5 ke php7 pada apache linux??&lt;/a&gt; Untuk kali ini saya akan membahas bagaimana jika merubah versi php untuk web server nginx pada linux?&lt;/p&gt;
+        <title>How to change php version on FastCGI (nginx linux)?</title>
+        <description>&lt;p&gt;In the last article, we discuss about &lt;a href=&quot;https://developerszone.work/linux/apache/php/2017/09/04/artikel-2/&quot;&gt;How to change php5 application version to php7 on apache linux?&lt;/a&gt; .  And then now, we will discuss about how to change php version in linux, but not with Apache again. It’s about the nginx server. That is, on the FastCGI version.
+Before that,We must install php version on fpm formater.&lt;/p&gt;
 
-&lt;p&gt;Sebelumnya untuk install versi php yang diinginkan,misal php5 dan php7&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; untuk php5&lt;/p&gt;
+&lt;p&gt;-&amp;gt;  php5 version&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;    $ apt-get install php5-fpm 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;-&amp;gt; untuk php7.0&lt;/p&gt;
+&lt;p&gt;-&amp;gt; php7.0 version&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;    $ apt-get install php7-fpm 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Bagaimana merubah settinganya?&lt;/p&gt;
+&lt;p&gt;What is the setting?&lt;/p&gt;
 
-&lt;p&gt;Buka file /etc/nginx/sites-available/default:&lt;/p&gt;
+&lt;p&gt;open the file in the directory /etc/nginx/sites-available/default:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;server {
     listen   80;
@@ -314,7 +313,7 @@ You can do it with &lt;strong&gt;dpkg&lt;/strong&gt; like this :&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://developerszone.work/asset/img/img-13nov2017-2.png&quot; alt=&quot;alt text&quot; title=&quot;view php5&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Pada &lt;strong&gt;location&lt;/strong&gt; terdapat &lt;strong&gt;fastcgi_pass unix:&lt;/strong&gt;  yang mengacu pada versi &lt;em&gt;php&lt;/em&gt; yang berjalan. Terlihat &lt;strong&gt;/var/run/php5-fpm.sock&lt;/strong&gt; versi php5 yang saat ini berjalan. Untuk merubahnya, kita harus mencari versi pada folder &lt;strong&gt;/var/run/&lt;/strong&gt;   &lt;strong&gt;php7-fpm.sock&lt;/strong&gt; berada di folder mana pada di install (pada kasus saya file tersebut terdapat didalam folder php).&lt;/p&gt;
+&lt;p&gt;On the line  &lt;em&gt;location&lt;/em&gt; there is  &lt;strong&gt;fastcgi_pass unix:&lt;/strong&gt;  which refers to the running &lt;em&gt;php&lt;/em&gt; version. In &lt;strong&gt;/var/run/php5-fpm.sock&lt;/strong&gt; , there is the current php5 version is running. To change it, we have to find on directory &lt;strong&gt;/var/run/&lt;/strong&gt;   &lt;strong&gt;php7-fpm.sock&lt;/strong&gt; (in my case the file is in the php folder but sometimes it can be found on somewhere else).&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;server {
     listen   80;
@@ -334,13 +333,14 @@ You can do it with &lt;strong&gt;dpkg&lt;/strong&gt; like this :&lt;/p&gt;
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Setelah serlesai restart nginx&lt;/p&gt;
+&lt;p&gt;After that, You must restart nginx&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;    $ sudo service nginx restart
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://developerszone.work/asset/img/img-13nov2017-1.png&quot; alt=&quot;alt text&quot; title=&quot;view php7&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;-done-&lt;/p&gt;
 </description>
         <pubDate>Mon, 13 Nov 2017 15:06:58 +0700</pubDate>
         <link>https://developerszone.work/linux/nginx/php/2017/11/13/artikel-1/</link>
