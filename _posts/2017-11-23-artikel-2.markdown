@@ -7,7 +7,7 @@ categories: [Linux]
 ---
 we often hear how to install apps on linux and then how to uninstall the application in linux with terminal.
 
-- How to show list aplications :
+- How to show list applications :
 
 You can do with __dpkg__
 
@@ -25,16 +25,16 @@ Will show list like this :
     ii  gitkraken                            3.2.2                   amd64                   Unleash your repo
 
 
-You will select aplication to be _uninstall_ 
+You will select application to be _uninstall_ 
 
 
-- Unistall aplication :
+- Unistall application :
 
 For example, you will _uninstall_  __gitkraken__
 
     $ apt-get --purge remove gitkraken
 
-You will get notification or warning about unistall of aplication 
+You will get notification or warning about unistall of application 
 
     Reading package lists... Done
     Building dependency tree       

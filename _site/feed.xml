@@ -6,8 +6,8 @@
 </description>
     <link>https://developerszone.work/</link>
     <atom:link href="https://developerszone.work/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Nov 2017 17:00:38 +0700</pubDate>
-    <lastBuildDate>Wed, 29 Nov 2017 17:00:38 +0700</lastBuildDate>
+    <pubDate>Mon, 04 Dec 2017 17:50:52 +0700</pubDate>
+    <lastBuildDate>Mon, 04 Dec 2017 17:50:52 +0700</lastBuildDate>
     <generator>Jekyll v2.5.0</generator>
     
       <item>
@@ -126,25 +126,25 @@ Would you like to create one now? (yes/no):
   &lt;li&gt;install framework Django&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;How to install,it same with other aplictions in linux &lt;strong&gt;apt-get&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;How to install,it same with other application in linux &lt;strong&gt;apt-get&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ apt-get install python-django
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Create aplication&lt;/li&gt;
+  &lt;li&gt;Create application&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Create aplication  with terminal (open your terminal), for example with name aplication  &lt;em&gt;mysite&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Create application  with terminal (open your terminal), for example with name application  &lt;em&gt;mysite&lt;/em&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ django-admin startproject mysite
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Run aplication&lt;/li&gt;
+  &lt;li&gt;Run application&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;How to run still using the terminal, go to the application directory with &lt;strong&gt;cd&lt;/strong&gt; )  and run aplication with :&lt;/p&gt;
+&lt;p&gt;How to run still using the terminal, go to the application directory with &lt;strong&gt;cd&lt;/strong&gt; )  and run application with :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ python manage.py runserver
 &lt;/code&gt;&lt;/pre&gt;
@@ -181,7 +181,7 @@ Quit the server with CONTROL-C.
         <description>&lt;p&gt;we often hear how to install apps on linux and then how to uninstall the application in linux with terminal.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;How to show list aplications :&lt;/li&gt;
+  &lt;li&gt;How to show list applications :&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;You can do with &lt;strong&gt;dpkg&lt;/strong&gt;&lt;/p&gt;
@@ -201,10 +201,10 @@ ii  gitk                                 1:1.9.1-1ubuntu0.7      all            
 ii  gitkraken                            3.2.2                   amd64                   Unleash your repo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;You will select aplication to be &lt;em&gt;uninstall&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You will select application to be &lt;em&gt;uninstall&lt;/em&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Unistall aplication :&lt;/li&gt;
+  &lt;li&gt;Unistall application :&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;For example, you will &lt;em&gt;uninstall&lt;/em&gt;  &lt;strong&gt;gitkraken&lt;/strong&gt;&lt;/p&gt;
@@ -212,7 +212,7 @@ ii  gitkraken                            3.2.2                   amd64          
 &lt;pre&gt;&lt;code&gt;$ apt-get --purge remove gitkraken
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;You will get notification or warning about unistall of aplication&lt;/p&gt;
+&lt;p&gt;You will get notification or warning about unistall of application&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Reading package lists... Done
 Building dependency tree       
@@ -252,15 +252,18 @@ Processing triggers for mime-support (3.54ubuntu1.1) ...
       </item>
     
       <item>
-        <title>Bagaimana install file deb pada linux ?</title>
-        <description>&lt;p&gt;Ketika kita membutukahan aplikasi baru pada linux, kita terkadang mencari pada internet panggil saja mbah google. Aplikasi yang kita dapat berformat &lt;strong&gt;deb&lt;/strong&gt;. dan yang menjadi pertanyaan bagaimana cara installnya. Pasti binggung kan kalau gak binggung tidak akan cari tau donk… hehehe maaf bercanda.&lt;/p&gt;
+        <title>How to install deb files on linux ?</title>
+        <description>&lt;p&gt;Often, we need new application on linux.we found application with deb files. And, How to install deb files on linux ?&lt;/p&gt;
 
-&lt;p&gt;Padahal caranya cukup mudah, buka terminal masukan script dibawah ini :&lt;/p&gt;
+&lt;p&gt;This is very easy, you know …&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;sudo dpkg -i nama_aplikasinya.deb 
+&lt;p&gt;Open your teminal.
+You can do it with &lt;strong&gt;dpkg&lt;/strong&gt; like this :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo dpkg -i your_application.deb 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Sekian semoga membantu.&lt;/p&gt;
+&lt;p&gt;-done-&lt;/p&gt;
 </description>
         <pubDate>Thu, 23 Nov 2017 15:06:58 +0700</pubDate>
         <link>https://developerszone.work/linux/2017/11/23/artikel-1/</link>

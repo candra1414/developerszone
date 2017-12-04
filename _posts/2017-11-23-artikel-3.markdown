@@ -17,20 +17,20 @@ How to Install ?
 - install Python
 - install framework Django
 
-How to install,it same with other aplictions in linux __apt-get__
+How to install,it same with other application in linux __apt-get__
 
     $ apt-get install python-django
 
 
--  Create aplication
+-  Create application
 
-Create aplication  with terminal (open your terminal), for example with name aplication  _mysite_
+Create application  with terminal (open your terminal), for example with name application  _mysite_
 
     $ django-admin startproject mysite
 
-- Run aplication
+- Run application
 
-How to run still using the terminal, go to the application directory with __cd__ )  and run aplication with :
+How to run still using the terminal, go to the application directory with __cd__ )  and run application with :
 
 
     $ python manage.py runserver
