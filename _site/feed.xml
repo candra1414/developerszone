@@ -6,8 +6,8 @@
 </description>
     <link>https://developerszone.work/</link>
     <atom:link href="https://developerszone.work/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 Dec 2017 05:09:55 +0700</pubDate>
-    <lastBuildDate>Tue, 05 Dec 2017 05:09:55 +0700</lastBuildDate>
+    <pubDate>Tue, 05 Dec 2017 05:28:23 +0700</pubDate>
+    <lastBuildDate>Tue, 05 Dec 2017 05:28:23 +0700</lastBuildDate>
     <generator>Jekyll v2.5.0</generator>
     
       <item>
@@ -289,7 +289,7 @@ Before that,We must install php version on fpm formater.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;    $ apt-get install php7-fpm 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;What is the setting?&lt;/p&gt;
+&lt;p&gt;How about this configuration?&lt;/p&gt;
 
 &lt;p&gt;open the file in the directory /etc/nginx/sites-available/default:&lt;/p&gt;
 
@@ -356,7 +356,7 @@ Before that,We must install php version on fpm formater.&lt;/p&gt;
       </item>
     
       <item>
-        <title>Bagaimana Contoh Menggunakan Onkeyup dan Onkeypress pada Javascript ?</title>
+        <title>How to Use Onkeyup and Onkeypress on Javascript ?</title>
         <description>&lt;p&gt;Pada Kali ini saya ingin memberikan contoh sederhana menggunakan &lt;strong&gt;Javascript&lt;/strong&gt; . Untuk kali ini saya akan menggukan &lt;strong&gt;Onkeyup&lt;/strong&gt; dan &lt;strong&gt;Onkeypress&lt;/strong&gt; . Pada contoh penggunaan ini saya menggunakan Yii2, Jadi jika anda ingin menggukan untuk code lain silahkan modifikasi sendiri form nya hehehe.&lt;/p&gt;
 
 &lt;p&gt;Form untuk input :&lt;/p&gt;

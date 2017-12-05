@@ -17,7 +17,7 @@ Before that,We must install php version on fpm formater.
         $ apt-get install php7-fpm 
 
 
-What is the setting?
+How about this configuration?
 
 open the file in the directory /etc/nginx/sites-available/default:
 
