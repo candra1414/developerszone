@@ -5,24 +5,23 @@ comments: true
 date:   2017-08-03 23:06:58
 categories: [Jekyll]
 ---
-
-Sebagai pemula menggunakan menggunakan Jekyll sering penulis menggunakan __ctrl+z__ untuk menghentikan proses pada terminal. Hal tersebut mengakibatkan ketika penulis akan mejalankan kembali akan muncul 
+How to stop jekyll program? Yes.. with ctrl+c. And what happens if you are closing program with other options? .often like this.
 
 {% highlight ruby%}
 Error:  Address already in use - bind(2)
 {% endhighlight %}
 
-Pada pertama kali akan bertanya-tanya apa maksud __error__ diatas, ternyata error tersebut dikarenakan masih ada __port__ yang berjalan untuk proses tersebut. Untuk itu harus mematikan terlebih dahulu sebelum menjalankan kembali.
+This _port_ as running. So , you must be kill this port.
 
-**Bagaimana mengetahui port berjalan ?**
+**How to kill running ports?**
 
-Untuk mengetahui proses yang berjalan cukup mudah. Kita masukan sintak pada terminal
+
 
 {% highlight ruby%}
 $ ps aux
 {% endhighlight %}
-Namun sintak diatas akan memuncul banyak proses yang berjalan dan akan membingunkan proses mana yang akan di hentikan.
-Untuk memudahkan kita dapat mencarinya dengan menambah __grep__ dan nama prosesnya.
+ 
+ or with _grep_ 
 
 {% highlight ruby%}
 $ ps aux | grep jekyll
@@ -32,7 +31,7 @@ $ ps aux | grep jekyll
 
 [logo]:{{site.urlimg}}/img-2.png "Porses Berjalan"
 
-Setelah mengetahui proses yang berjalan kita bisa melihat proses masih pada PID __4980__ . Untuk mematikannya dengan menggunakan  sintak __kill -9 PID__ 
+Find port PID __4980__  from list aplications and kill this with  __kill -9 PID__ 
 
 {% highlight ruby%}
 $ kill -9 4980

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width initial-scale=1">
 
   <title>How to solve Error:  Address already in use - bind(2) from Jekyll ?</title>
-  <meta name="description" content="Sebagai pemula menggunakan menggunakan Jekyll sering penulis menggunakan ctrl+z untuk menghentikan proses pada terminal. Hal tersebut mengakibatkan ketika pe...">
+  <meta name="description" content="How to stop jekyll program? Yes.. with ctrl+c. And what happens if you are closing program with other options? .often like this.">
 	
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -114,26 +114,23 @@
   </header>
 
   <article class="post-content content container-fluid">
-    <p>Sebagai pemula menggunakan menggunakan Jekyll sering penulis menggunakan <strong>ctrl+z</strong> untuk menghentikan proses pada terminal. Hal tersebut mengakibatkan ketika penulis akan mejalankan kembali akan muncul</p>
+    <p>How to stop jekyll program? Yes.. with ctrl+c. And what happens if you are closing program with other options? .often like this.</p>
 
 <div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="ss">Error</span><span class="p">:</span>  <span class="no">Address</span> <span class="n">already</span> <span class="k">in</span> <span class="n">use</span> <span class="o">-</span> <span class="n">bind</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span></code></pre></div>
 
-<p>Pada pertama kali akan bertanya-tanya apa maksud <strong>error</strong> diatas, ternyata error tersebut dikarenakan masih ada <strong>port</strong> yang berjalan untuk proses tersebut. Untuk itu harus mematikan terlebih dahulu sebelum menjalankan kembali.</p>
+<p>This <em>port</em> as running. So , you must be kill this port.</p>
 
-<p><strong>Bagaimana mengetahui port berjalan ?</strong></p>
-
-<p>Untuk mengetahui proses yang berjalan cukup mudah. Kita masukan sintak pada terminal</p>
+<p><strong>How to kill running ports?</strong></p>
 
 <div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">ps</span> <span class="n">aux</span></code></pre></div>
 
-<p>Namun sintak diatas akan memuncul banyak proses yang berjalan dan akan membingunkan proses mana yang akan di hentikan.
-Untuk memudahkan kita dapat mencarinya dengan menambah <strong>grep</strong> dan nama prosesnya.</p>
+<p>or with <em>grep</em></p>
 
 <div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">ps</span> <span class="n">aux</span> <span class="o">|</span> <span class="n">grep</span> <span class="n">jekyll</span></code></pre></div>
 
 <p><img src="https://developerszone.work/asset/img//img-2.png" alt="alt text" title="Porses Berjalan" /></p>
 
-<p>Setelah mengetahui proses yang berjalan kita bisa melihat proses masih pada PID <strong>4980</strong> . Untuk mematikannya dengan menggunakan  sintak <strong>kill -9 PID</strong></p>
+<p>Find port PID <strong>4980</strong>  from list aplications and kill this with  <strong>kill -9 PID</strong></p>
 
 <div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">kill</span> <span class="o">-</span><span class="mi">9</span> <span class="mi">4980</span></code></pre></div>
 

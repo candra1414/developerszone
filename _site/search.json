@@ -296,7 +296,7 @@
       "category" : "jekyll",
       "tags"     : "",
       "date"     : "Aug 4, 2017",
-      "content": "Sebagai pemula menggunakan menggunakan Jekyll sering penulis menggunakan ctrl+z untuk menghentikan proses pada terminal. Hal tersebut mengakibatkan ketika penulis akan mejalankan kembali akan muncul"
+      "content": "How to stop jekyll program? Yes.. with ctrl+c. And what happens if you are closing program with other options? .often like this."
 
     } ,
   
