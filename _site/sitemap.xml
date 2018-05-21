@@ -6,204 +6,192 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
   <loc>http://developerszone.work/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://developerszone.work/about/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://developerszone.work/categori/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://developerszone.work/jekyll/update/2017/11/27/welcome-to-jekyll/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://developerszone.work/linux/python/django/mysql/2017/11/23/artikel-4/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://developerszone.work/linux/python/2017/11/23/artikel-3/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://developerszone.work/page2/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://developerszone.work/page3/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://developerszone.work/page4/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://developerszone.work/page5/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://developerszone.work/page6/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://developerszone.work/page7/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://developerszone.work/page8/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://developerszone.work/page9/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://developerszone.work/page10/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://developerszone.work/linux/2017/11/23/artikel-2/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://developerszone.work/page2/</loc>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://developerszone.work/page3/</loc>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://developerszone.work/page4/</loc>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://developerszone.work/page5/</loc>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://developerszone.work/page6/</loc>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://developerszone.work/page7/</loc>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://developerszone.work/page8/</loc>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://developerszone.work/page9/</loc>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://developerszone.work/linux/2017/11/23/artikel-1/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/linux/nginx/php/2017/11/13/artikel-1/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/javascript/html/php/2017/10/26/artikel-1/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/jekyll/2017/10/20/artikel-1/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/php/server/2017/10/19/artikel-3/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/html/php/2017/10/19/artikel-2/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/html/css/2017/10/19/artikel-1/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/html/2017/10/10/artikel-2/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/html/2017/10/10/artikel-1/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/ruby/rails/2017/09/05/artikel-2/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/ruby/rails/2017/09/05/artikel-1/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/linux/2017/09/04/artikel-1/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/linux/apache/php/2017/09/04/artikel-2/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/jekyll/disqus/2017/08/30/artikel-1/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/yii/2017/08/28/artikel-1/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/composer/yii/2017/08/24/artikel-2/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/composer/2017/08/24/artikel-1/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/git/sublime-text/2017/08/22/artikel-1/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/jekyll/2017/08/08/artikel-2/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/jekyll/2017/08/08/artikel-1/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/jekyll/2017/08/07/artikel-1/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/jekyll/2017/08/03/artikel-1/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://developerszone.work/markdown/2017/08/02/artikel-1/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
+  <lastmod>2018-04-10T08:43:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-<url>
-  <loc>http://developerszone.work/2017/08/01/welcome/</loc>
-  <lastmod>2017-11-27T05:04:38+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+
+
 </urlset>
