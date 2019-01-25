@@ -4,12 +4,10 @@ title: About?
 permalink: /about/
 ---
 
-I'm just a programmer, i lovers code, anime and rubik, fun's on my computer 
-and experiment with this.
+I'm just a programmer, i lovers code, anime and rubik, fun's on computer 
+and experiments with this.
 
-It just records my experiments
-
-If you find any writing wrong, I am very sorry
+It just a records of experiments
 
 My contact : 
 
